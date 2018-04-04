@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="@id/server_logo"
         app:layout_constraintStart_toEndOf="@id/server_logo"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:text="https://open.rocket.chat" />
+        tools:text="https://demo.goalify.chat" />
 
     <TextView
         android:id="@+id/text_username"

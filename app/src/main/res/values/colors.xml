@@ -41,5 +41,6 @@
 
     <!-- Suggestions -->
     <color name="suggestion_background_color">@android:color/white</color>
+    <color name="notification_color">#e82257</color>
 
 </resources>

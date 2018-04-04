@@ -73,7 +73,7 @@ class AppModule {
             platformLogger = logger
 
             // TODO remove
-            restUrl = "https://open.rocket.chat"
+            restUrl = "https://demo.goalify.chat"
         }
     }
 

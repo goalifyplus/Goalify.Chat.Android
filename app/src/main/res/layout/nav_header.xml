@@ -65,7 +65,7 @@
             app:layout_constraintEnd_toStartOf="@+id/account_expand"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_name"
-            tools:text="https://open.rocket.chat" />
+            tools:text="https://demo.goalify.chat" />
 
         <ImageView
             android:id="@+id/account_expand"

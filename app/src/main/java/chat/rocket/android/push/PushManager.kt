@@ -240,10 +240,10 @@ class PushManager @Inject constructor(
             }
 
             //TODO: Get Site_Name PublicSetting from cache
-            val subText = getSiteName(host)
-            if (subText.isNotEmpty()) {
-                builder.setSubText(subText)
-            }
+            // val subText = getSiteName(host)
+            // if (subText.isNotEmpty()) {
+            //     builder.setSubText(subText)
+            // }
 
             return@with builder
         }
@@ -251,7 +251,7 @@ class PushManager @Inject constructor(
 
     private fun getSiteName(host: String): String {
         val settings = getSettingsInteractor.get(host)
-        return settings.siteName() ?: "Rocket.Chat"
+        return settings.siteName() ?: "Goalify.Chat"
     }
 
     private fun getTitle(messageCount: Int, title: String): CharSequence {
@@ -323,11 +323,11 @@ class PushManager @Inject constructor(
         val alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
         val res = context.resources
         val smallIcon = res.getIdentifier(
-                "rocket_chat_notification", "drawable", context.packageName)
+                "ic_stat_name", "drawable", context.packageName)
         with(this, {
             setAutoCancel(true)
             setShowWhen(true)
-            color = context.resources.getColor(R.color.colorPrimary)
+            color = context.resources.getColor(R.color.notification_color)
             setDefaults(Notification.DEFAULT_ALL)
             setSmallIcon(smallIcon)
             setSound(alarmSound)
