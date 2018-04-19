@@ -1,13 +1,13 @@
-package chat.rocket.android.chatroom.adapter
+package com.goalify.chat.android.chatroom.adapter
 
 import android.support.v7.widget.RecyclerView
 import android.view.MenuItem
 import android.view.ViewGroup
-import chat.rocket.android.R
-import chat.rocket.android.chatroom.presentation.ChatRoomPresenter
-import chat.rocket.android.chatroom.viewmodel.*
-import chat.rocket.android.util.extensions.inflate
-import chat.rocket.android.widget.emoji.EmojiReactionListener
+import com.goalify.chat.android.R
+import com.goalify.chat.android.chatroom.presentation.ChatRoomPresenter
+import com.goalify.chat.android.chatroom.viewmodel.*
+import com.goalify.chat.android.util.extensions.inflate
+import com.goalify.chat.android.widget.emoji.EmojiReactionListener
 import chat.rocket.core.model.Message
 import chat.rocket.core.model.isSystemMessage
 import timber.log.Timber

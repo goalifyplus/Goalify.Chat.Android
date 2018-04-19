@@ -1,4 +1,4 @@
-package chat.rocket.android.widget.emoji
+package com.goalify.chat.android.widget.emoji
 
 import android.content.Context
 import android.support.design.widget.TabLayout
@@ -12,7 +12,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.ImageView
-import chat.rocket.android.R
+import com.goalify.chat.android.R
 
 
 class EmojiKeyboardPopup(context: Context, view: View) : OverKeyboardPopupWindow(context, view) {

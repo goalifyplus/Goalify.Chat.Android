@@ -1,13 +1,13 @@
-package chat.rocket.android.server.ui
+package com.goalify.chat.android.server.ui
 
 import android.app.ProgressDialog
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import chat.rocket.android.server.presentation.ChangeServerPresenter
-import chat.rocket.android.server.presentation.ChangeServerView
-import chat.rocket.android.util.extensions.showToast
+import com.goalify.chat.android.server.presentation.ChangeServerPresenter
+import com.goalify.chat.android.server.presentation.ChangeServerView
+import com.goalify.chat.android.util.extensions.showToast
 import dagger.android.AndroidInjection
 import javax.inject.Inject
 

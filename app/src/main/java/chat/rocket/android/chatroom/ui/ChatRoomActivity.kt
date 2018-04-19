@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.ui
+package com.goalify.chat.android.chatroom.ui
 
 import DrawableHelper
 import android.content.Context
@@ -7,11 +7,11 @@ import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
-import chat.rocket.android.R
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
-import chat.rocket.android.server.infraestructure.ConnectionManagerFactory
-import chat.rocket.android.util.extensions.addFragment
-import chat.rocket.android.util.extensions.textContent
+import com.goalify.chat.android.R
+import com.goalify.chat.android.server.domain.GetCurrentServerInteractor
+import com.goalify.chat.android.server.infraestructure.ConnectionManagerFactory
+import com.goalify.chat.android.util.extensions.addFragment
+import com.goalify.chat.android.util.extensions.textContent
 import chat.rocket.common.model.RoomType
 import chat.rocket.common.model.roomTypeOf
 import dagger.android.AndroidInjection

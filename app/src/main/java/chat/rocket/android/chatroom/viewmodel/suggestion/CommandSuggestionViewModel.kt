@@ -1,6 +1,6 @@
-package chat.rocket.android.chatroom.viewmodel.suggestion
+package com.goalify.chat.android.chatroom.viewmodel.suggestion
 
-import chat.rocket.android.widget.autocompletion.model.SuggestionModel
+import com.goalify.chat.android.widget.autocompletion.model.SuggestionModel
 
 class CommandSuggestionViewModel(text: String,
                                  val description: String,

@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "1020987621558",
-    "firebase_url": "https://rocketchatnative.firebaseio.com",
-    "project_id": "rocketchatnative",
-    "storage_bucket": "rocketchatnative.appspot.com"
+    "project_number": "718824155492",
+    "firebase_url": "https://goalify-chat.firebaseio.com",
+    "project_id": "goalify-chat",
+    "storage_bucket": "goalify-chat.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1020987621558:android:16da2e50aff9f0c9",
+        "mobilesdk_app_id": "1:718824155492:android:b1e056e321814a2f",
         "android_client_info": {
-          "package_name": "chat.rocket.android"
+          "package_name": "com.goalify.chat.android"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1020987621558-trk61fjrahho0ujtjap095p1jmi48pfq.apps.googleusercontent.com",
+          "client_id": "718824155492-mvb28uu8s7flq0no7l0jo9bsc49hmtqv.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDc7VYUdU6kRkoRTToiCn1rh-W0wJvhLWk"
+          "current_key": "AIzaSyBvidSr8HL_v7G6ld8b00OFZWyf6HYhWw8"
         }
       ],
       "services": {
@@ -39,20 +39,20 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1020987621558:android:1551054db195f705",
+        "mobilesdk_app_id": "1:718824155492:android:77d0237a9d73db47",
         "android_client_info": {
-          "package_name": "chat.rocket.android.dev"
+          "package_name": "com.goalify.chat.android.dev"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1020987621558-trk61fjrahho0ujtjap095p1jmi48pfq.apps.googleusercontent.com",
+          "client_id": "718824155492-mvb28uu8s7flq0no7l0jo9bsc49hmtqv.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDc7VYUdU6kRkoRTToiCn1rh-W0wJvhLWk"
+          "current_key": "AIzaSyBvidSr8HL_v7G6ld8b00OFZWyf6HYhWw8"
         }
       ],
       "services": {

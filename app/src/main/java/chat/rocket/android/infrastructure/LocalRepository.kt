@@ -1,4 +1,4 @@
-package chat.rocket.android.infrastructure
+package com.goalify.chat.android.infrastructure
 
 interface LocalRepository {
 

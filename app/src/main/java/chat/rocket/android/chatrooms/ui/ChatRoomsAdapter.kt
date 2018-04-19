@@ -1,4 +1,4 @@
-package chat.rocket.android.chatrooms.ui
+package com.goalify.chat.android.chatrooms.ui
 
 import DateTimeHelper
 import DrawableHelper
@@ -11,16 +11,16 @@ import android.text.style.ForegroundColorSpan
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import chat.rocket.android.R
-import chat.rocket.android.helper.UrlHelper
-import chat.rocket.android.infrastructure.LocalRepository
-import chat.rocket.android.infrastructure.checkIfMyself
-import chat.rocket.android.server.domain.PublicSettings
-import chat.rocket.android.server.domain.useRealName
-import chat.rocket.android.util.extensions.content
-import chat.rocket.android.util.extensions.inflate
-import chat.rocket.android.util.extensions.setVisible
-import chat.rocket.android.util.extensions.textContent
+import com.goalify.chat.android.R
+import com.goalify.chat.android.helper.UrlHelper
+import com.goalify.chat.android.infrastructure.LocalRepository
+import com.goalify.chat.android.infrastructure.checkIfMyself
+import com.goalify.chat.android.server.domain.PublicSettings
+import com.goalify.chat.android.server.domain.useRealName
+import com.goalify.chat.android.util.extensions.content
+import com.goalify.chat.android.util.extensions.inflate
+import com.goalify.chat.android.util.extensions.setVisible
+import com.goalify.chat.android.util.extensions.textContent
 import chat.rocket.common.model.RoomType
 import chat.rocket.core.model.ChatRoom
 import com.facebook.drawee.view.SimpleDraweeView

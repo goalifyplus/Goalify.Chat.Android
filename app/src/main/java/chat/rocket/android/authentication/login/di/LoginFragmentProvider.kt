@@ -1,6 +1,6 @@
-package chat.rocket.android.authentication.login.di
+package com.goalify.chat.android.authentication.login.di
 
-import chat.rocket.android.authentication.login.ui.LoginFragment
+import com.goalify.chat.android.authentication.login.ui.LoginFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

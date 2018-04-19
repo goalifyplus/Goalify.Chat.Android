@@ -1,15 +1,15 @@
-package chat.rocket.android.authentication.ui
+package com.goalify.chat.android.authentication.ui
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
-import chat.rocket.android.R
-import chat.rocket.android.authentication.presentation.AuthenticationPresenter
-import chat.rocket.android.authentication.server.ui.ServerFragment
-import chat.rocket.android.util.extensions.addFragment
-import chat.rocket.android.util.extensions.launchUI
+import com.goalify.chat.android.R
+import com.goalify.chat.android.authentication.presentation.AuthenticationPresenter
+import com.goalify.chat.android.authentication.server.ui.ServerFragment
+import com.goalify.chat.android.util.extensions.addFragment
+import com.goalify.chat.android.util.extensions.launchUI
 import dagger.android.AndroidInjection
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector

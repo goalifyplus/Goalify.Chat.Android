@@ -1,7 +1,7 @@
-package chat.rocket.android.members.presentation
+package com.goalify.chat.android.members.presentation
 
-import chat.rocket.android.chatroom.ui.ChatRoomActivity
-import chat.rocket.android.member.ui.newInstance
+import com.goalify.chat.android.chatroom.ui.ChatRoomActivity
+import com.goalify.chat.android.member.ui.newInstance
 
 class MembersNavigator(internal val activity: ChatRoomActivity) {
 

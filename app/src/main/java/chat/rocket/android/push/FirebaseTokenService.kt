@@ -1,9 +1,9 @@
-package chat.rocket.android.push
+package com.goalify.chat.android.push
 
-import chat.rocket.android.R
-import chat.rocket.android.infrastructure.LocalRepository
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
-import chat.rocket.android.server.infraestructure.RocketChatClientFactory
+import com.goalify.chat.android.R
+import com.goalify.chat.android.infrastructure.LocalRepository
+import com.goalify.chat.android.server.domain.GetCurrentServerInteractor
+import com.goalify.chat.android.server.infraestructure.RocketChatClientFactory
 import chat.rocket.common.RocketChatException
 import chat.rocket.core.RocketChatClient
 import chat.rocket.core.internal.rest.registerPushToken

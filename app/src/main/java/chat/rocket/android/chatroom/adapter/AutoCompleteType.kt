@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.adapter
+package com.goalify.chat.android.chatroom.adapter
 
 import android.support.annotation.IntDef
 

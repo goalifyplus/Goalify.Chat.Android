@@ -1,10 +1,10 @@
-package chat.rocket.android.authentication.login.di
+package com.goalify.chat.android.authentication.login.di
 
 import android.arch.lifecycle.LifecycleOwner
-import chat.rocket.android.authentication.login.presentation.LoginView
-import chat.rocket.android.authentication.login.ui.LoginFragment
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.dagger.scope.PerFragment
+import com.goalify.chat.android.authentication.login.presentation.LoginView
+import com.goalify.chat.android.authentication.login.ui.LoginFragment
+import com.goalify.chat.android.core.lifecycle.CancelStrategy
+import com.goalify.chat.android.dagger.scope.PerFragment
 import dagger.Module
 import dagger.Provides
 import kotlinx.coroutines.experimental.Job

@@ -1,4 +1,4 @@
-package chat.rocket.android.main.viewmodel
+package com.goalify.chat.android.main.viewmodel
 
 data class NavHeaderViewModel(
     val username: String,

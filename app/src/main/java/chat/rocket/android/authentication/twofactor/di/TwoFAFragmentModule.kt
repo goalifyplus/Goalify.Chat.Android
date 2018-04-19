@@ -1,10 +1,10 @@
-package chat.rocket.android.authentication.twofactor.di
+package com.goalify.chat.android.authentication.twofactor.di
 
 import android.arch.lifecycle.LifecycleOwner
-import chat.rocket.android.authentication.twofactor.presentation.TwoFAView
-import chat.rocket.android.authentication.twofactor.ui.TwoFAFragment
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.dagger.scope.PerFragment
+import com.goalify.chat.android.authentication.twofactor.presentation.TwoFAView
+import com.goalify.chat.android.authentication.twofactor.ui.TwoFAFragment
+import com.goalify.chat.android.core.lifecycle.CancelStrategy
+import com.goalify.chat.android.dagger.scope.PerFragment
 import dagger.Module
 import dagger.Provides
 import kotlinx.coroutines.experimental.Job

@@ -1,12 +1,12 @@
-package chat.rocket.android.chatroom.presentation
+package com.goalify.chat.android.chatroom.presentation
 
-import chat.rocket.android.chatroom.viewmodel.ViewModelMapper
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.server.domain.GetChatRoomsInteractor
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
-import chat.rocket.android.server.domain.GetSettingsInteractor
-import chat.rocket.android.server.infraestructure.RocketChatClientFactory
-import chat.rocket.android.util.extensions.launchUI
+import com.goalify.chat.android.chatroom.viewmodel.ViewModelMapper
+import com.goalify.chat.android.core.lifecycle.CancelStrategy
+import com.goalify.chat.android.server.domain.GetChatRoomsInteractor
+import com.goalify.chat.android.server.domain.GetCurrentServerInteractor
+import com.goalify.chat.android.server.domain.GetSettingsInteractor
+import com.goalify.chat.android.server.infraestructure.RocketChatClientFactory
+import com.goalify.chat.android.util.extensions.launchUI
 import chat.rocket.common.RocketChatException
 import chat.rocket.common.util.ifNull
 import chat.rocket.core.internal.rest.getRoomPinnedMessages

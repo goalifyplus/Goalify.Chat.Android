@@ -1,6 +1,6 @@
-package chat.rocket.android.settings.password.presentation
+package com.goalify.chat.android.settings.password.presentation
 
-import chat.rocket.android.core.behaviours.LoadingView
+import com.goalify.chat.android.core.behaviours.LoadingView
 
 interface PasswordView: LoadingView {
     /**

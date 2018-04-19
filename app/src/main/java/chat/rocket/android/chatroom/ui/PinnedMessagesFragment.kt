@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.ui
+package com.goalify.chat.android.chatroom.ui
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -8,14 +8,14 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import chat.rocket.android.R
-import chat.rocket.android.chatroom.adapter.ChatRoomAdapter
-import chat.rocket.android.chatroom.presentation.PinnedMessagesPresenter
-import chat.rocket.android.chatroom.presentation.PinnedMessagesView
-import chat.rocket.android.chatroom.viewmodel.BaseViewModel
-import chat.rocket.android.helper.EndlessRecyclerViewScrollListener
-import chat.rocket.android.util.extensions.setVisible
-import chat.rocket.android.util.extensions.showToast
+import com.goalify.chat.android.R
+import com.goalify.chat.android.chatroom.adapter.ChatRoomAdapter
+import com.goalify.chat.android.chatroom.presentation.PinnedMessagesPresenter
+import com.goalify.chat.android.chatroom.presentation.PinnedMessagesView
+import com.goalify.chat.android.chatroom.viewmodel.BaseViewModel
+import com.goalify.chat.android.helper.EndlessRecyclerViewScrollListener
+import com.goalify.chat.android.util.extensions.setVisible
+import com.goalify.chat.android.util.extensions.showToast
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.fragment_pinned_messages.*
 import javax.inject.Inject

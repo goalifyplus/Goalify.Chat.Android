@@ -1,13 +1,13 @@
-package chat.rocket.android.authentication.server.presentation
+package com.goalify.chat.android.authentication.server.presentation
 
-import chat.rocket.android.authentication.presentation.AuthenticationNavigator
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.helper.NetworkHelper
-import chat.rocket.android.helper.UrlHelper
-import chat.rocket.android.server.domain.GetAccountsInteractor
-import chat.rocket.android.server.domain.RefreshSettingsInteractor
-import chat.rocket.android.server.domain.SaveCurrentServerInteractor
-import chat.rocket.android.util.extensions.launchUI
+import com.goalify.chat.android.authentication.presentation.AuthenticationNavigator
+import com.goalify.chat.android.core.lifecycle.CancelStrategy
+import com.goalify.chat.android.helper.NetworkHelper
+import com.goalify.chat.android.helper.UrlHelper
+import com.goalify.chat.android.server.domain.GetAccountsInteractor
+import com.goalify.chat.android.server.domain.RefreshSettingsInteractor
+import com.goalify.chat.android.server.domain.SaveCurrentServerInteractor
+import com.goalify.chat.android.util.extensions.launchUI
 import chat.rocket.common.util.ifNull
 import javax.inject.Inject
 

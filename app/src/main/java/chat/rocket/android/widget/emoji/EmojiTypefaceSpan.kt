@@ -1,4 +1,4 @@
-package chat.rocket.android.widget.emoji
+package com.goalify.chat.android.widget.emoji
 
 import android.graphics.Paint
 import android.graphics.Typeface

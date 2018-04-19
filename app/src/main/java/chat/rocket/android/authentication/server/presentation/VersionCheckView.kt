@@ -1,4 +1,4 @@
-package chat.rocket.android.authentication.server.presentation
+package com.goalify.chat.android.authentication.server.presentation
 
 interface VersionCheckView {
     /**

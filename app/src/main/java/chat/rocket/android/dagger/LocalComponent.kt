@@ -1,8 +1,8 @@
-package chat.rocket.android.dagger
+package com.goalify.chat.android.dagger
 
 import android.content.Context
-import chat.rocket.android.chatroom.adapter.MessageReactionsAdapter
-import chat.rocket.android.dagger.module.LocalModule
+import com.goalify.chat.android.chatroom.adapter.MessageReactionsAdapter
+import com.goalify.chat.android.dagger.module.LocalModule
 import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton

@@ -1,12 +1,12 @@
-package chat.rocket.android.chatroom.di
+package com.goalify.chat.android.chatroom.di
 
 import android.arch.lifecycle.LifecycleOwner
-import chat.rocket.android.chatroom.presentation.ChatRoomNavigator
-import chat.rocket.android.chatroom.presentation.ChatRoomView
-import chat.rocket.android.chatroom.ui.ChatRoomActivity
-import chat.rocket.android.chatroom.ui.ChatRoomFragment
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.dagger.scope.PerFragment
+import com.goalify.chat.android.chatroom.presentation.ChatRoomNavigator
+import com.goalify.chat.android.chatroom.presentation.ChatRoomView
+import com.goalify.chat.android.chatroom.ui.ChatRoomActivity
+import com.goalify.chat.android.chatroom.ui.ChatRoomFragment
+import com.goalify.chat.android.core.lifecycle.CancelStrategy
+import com.goalify.chat.android.dagger.scope.PerFragment
 import dagger.Module
 import dagger.Provides
 import kotlinx.coroutines.experimental.Job

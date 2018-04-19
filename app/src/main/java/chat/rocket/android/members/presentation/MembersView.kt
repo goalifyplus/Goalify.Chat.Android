@@ -1,8 +1,8 @@
-package chat.rocket.android.members.presentation
+package com.goalify.chat.android.members.presentation
 
-import chat.rocket.android.core.behaviours.LoadingView
-import chat.rocket.android.core.behaviours.MessageView
-import chat.rocket.android.members.viewmodel.MemberViewModel
+import com.goalify.chat.android.core.behaviours.LoadingView
+import com.goalify.chat.android.core.behaviours.MessageView
+import com.goalify.chat.android.members.viewmodel.MemberViewModel
 
 interface MembersView: LoadingView, MessageView {
 

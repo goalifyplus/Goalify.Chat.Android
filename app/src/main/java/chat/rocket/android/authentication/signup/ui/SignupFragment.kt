@@ -1,4 +1,4 @@
-package chat.rocket.android.authentication.signup.ui
+package com.goalify.chat.android.authentication.signup.ui
 
 import DrawableHelper
 import android.os.Build
@@ -7,12 +7,12 @@ import android.support.v4.app.Fragment
 import android.text.style.ClickableSpan
 import android.view.*
 import android.widget.Toast
-import chat.rocket.android.R
-import chat.rocket.android.authentication.signup.presentation.SignupPresenter
-import chat.rocket.android.authentication.signup.presentation.SignupView
-import chat.rocket.android.helper.KeyboardHelper
-import chat.rocket.android.helper.TextHelper
-import chat.rocket.android.util.extensions.*
+import com.goalify.chat.android.R
+import com.goalify.chat.android.authentication.signup.presentation.SignupPresenter
+import com.goalify.chat.android.authentication.signup.presentation.SignupView
+import com.goalify.chat.android.helper.KeyboardHelper
+import com.goalify.chat.android.helper.TextHelper
+import com.goalify.chat.android.util.extensions.*
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.fragment_authentication_sign_up.*
 import javax.inject.Inject

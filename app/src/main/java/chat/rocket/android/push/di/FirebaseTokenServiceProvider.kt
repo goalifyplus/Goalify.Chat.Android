@@ -1,7 +1,7 @@
-package chat.rocket.android.push.di
+package com.goalify.chat.android.push.di
 
-import chat.rocket.android.dagger.module.AppModule
-import chat.rocket.android.push.FirebaseTokenService
+import com.goalify.chat.android.dagger.module.AppModule
+import com.goalify.chat.android.push.FirebaseTokenService
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

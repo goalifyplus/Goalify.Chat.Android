@@ -1,4 +1,4 @@
-package chat.rocket.android.player
+package com.goalify.chat.android.player
 
 import android.content.Context
 import android.content.Intent

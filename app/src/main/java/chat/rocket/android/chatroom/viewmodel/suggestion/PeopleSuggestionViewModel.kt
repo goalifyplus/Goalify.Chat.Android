@@ -1,6 +1,6 @@
-package chat.rocket.android.chatroom.viewmodel.suggestion
+package com.goalify.chat.android.chatroom.viewmodel.suggestion
 
-import chat.rocket.android.widget.autocompletion.model.SuggestionModel
+import com.goalify.chat.android.widget.autocompletion.model.SuggestionModel
 import chat.rocket.common.model.UserStatus
 
 class PeopleSuggestionViewModel(val imageUri: String?,

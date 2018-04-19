@@ -1,15 +1,15 @@
-package chat.rocket.android.chatroom.adapter
+package com.goalify.chat.android.chatroom.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import chat.rocket.android.R
-import chat.rocket.android.chatroom.adapter.CommandSuggestionsAdapter.CommandSuggestionsViewHolder
-import chat.rocket.android.chatroom.viewmodel.suggestion.CommandSuggestionViewModel
-import chat.rocket.android.widget.autocompletion.model.SuggestionModel
-import chat.rocket.android.widget.autocompletion.ui.BaseSuggestionViewHolder
-import chat.rocket.android.widget.autocompletion.ui.SuggestionsAdapter
+import com.goalify.chat.android.R
+import com.goalify.chat.android.chatroom.adapter.CommandSuggestionsAdapter.CommandSuggestionsViewHolder
+import com.goalify.chat.android.chatroom.viewmodel.suggestion.CommandSuggestionViewModel
+import com.goalify.chat.android.widget.autocompletion.model.SuggestionModel
+import com.goalify.chat.android.widget.autocompletion.ui.BaseSuggestionViewHolder
+import com.goalify.chat.android.widget.autocompletion.ui.SuggestionsAdapter
 
 class CommandSuggestionsAdapter : SuggestionsAdapter<CommandSuggestionsViewHolder>(token = "/",
         constraint = CONSTRAINT_BOUND_TO_START, threshold = RESULT_COUNT_UNLIMITED) {

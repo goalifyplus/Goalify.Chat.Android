@@ -1,8 +1,8 @@
-package chat.rocket.android.widget.autocompletion.strategy.trie
+package com.goalify.chat.android.widget.autocompletion.strategy.trie
 
-import chat.rocket.android.widget.autocompletion.model.SuggestionModel
-import chat.rocket.android.widget.autocompletion.strategy.CompletionStrategy
-import chat.rocket.android.widget.autocompletion.strategy.trie.data.Trie
+import com.goalify.chat.android.widget.autocompletion.model.SuggestionModel
+import com.goalify.chat.android.widget.autocompletion.strategy.CompletionStrategy
+import com.goalify.chat.android.widget.autocompletion.strategy.trie.data.Trie
 
 class TrieCompletionStrategy : CompletionStrategy {
     private val items = mutableListOf<SuggestionModel>()

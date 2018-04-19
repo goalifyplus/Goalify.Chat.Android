@@ -1,4 +1,4 @@
-package chat.rocket.android.authentication.login.ui
+package com.goalify.chat.android.authentication.login.ui
 
 import DrawableHelper
 import android.app.Activity
@@ -15,18 +15,18 @@ import android.view.ViewTreeObserver
 import android.widget.ImageButton
 import android.widget.ScrollView
 import android.widget.Toast
-import chat.rocket.android.BuildConfig
-import chat.rocket.android.R
-import chat.rocket.android.authentication.login.presentation.LoginPresenter
-import chat.rocket.android.authentication.login.presentation.LoginView
-import chat.rocket.android.helper.KeyboardHelper
-import chat.rocket.android.helper.TextHelper
-import chat.rocket.android.util.extensions.*
-import chat.rocket.android.webview.cas.ui.INTENT_CAS_TOKEN
-import chat.rocket.android.webview.cas.ui.casWebViewIntent
-import chat.rocket.android.webview.oauth.ui.INTENT_OAUTH_CREDENTIAL_SECRET
-import chat.rocket.android.webview.oauth.ui.INTENT_OAUTH_CREDENTIAL_TOKEN
-import chat.rocket.android.webview.oauth.ui.oauthWebViewIntent
+import com.goalify.chat.android.BuildConfig
+import com.goalify.chat.android.R
+import com.goalify.chat.android.authentication.login.presentation.LoginPresenter
+import com.goalify.chat.android.authentication.login.presentation.LoginView
+import com.goalify.chat.android.helper.KeyboardHelper
+import com.goalify.chat.android.helper.TextHelper
+import com.goalify.chat.android.util.extensions.*
+import com.goalify.chat.android.webview.cas.ui.INTENT_CAS_TOKEN
+import com.goalify.chat.android.webview.cas.ui.casWebViewIntent
+import com.goalify.chat.android.webview.oauth.ui.INTENT_OAUTH_CREDENTIAL_SECRET
+import com.goalify.chat.android.webview.oauth.ui.INTENT_OAUTH_CREDENTIAL_TOKEN
+import com.goalify.chat.android.webview.oauth.ui.oauthWebViewIntent
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.fragment_authentication_log_in.*
 import javax.inject.Inject

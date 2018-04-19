@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.viewmodel
+package com.goalify.chat.android.chatroom.viewmodel
 
 data class ReactionViewModel(
         val messageId: String,

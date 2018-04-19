@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.viewmodel
+package com.goalify.chat.android.chatroom.viewmodel
 
 interface BaseMessageViewModel<out T> : BaseViewModel<T> {
     val avatar: String

@@ -1,4 +1,4 @@
-package chat.rocket.android.server.domain.model
+package com.goalify.chat.android.server.domain.model
 
 import se.ansman.kotshi.JsonSerializable
 

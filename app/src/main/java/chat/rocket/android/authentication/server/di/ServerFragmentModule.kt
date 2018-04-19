@@ -1,9 +1,9 @@
-package chat.rocket.android.authentication.server.di
+package com.goalify.chat.android.authentication.server.di
 
 import android.arch.lifecycle.LifecycleOwner
-import chat.rocket.android.authentication.server.presentation.ServerView
-import chat.rocket.android.authentication.server.ui.ServerFragment
-import chat.rocket.android.core.lifecycle.CancelStrategy
+import com.goalify.chat.android.authentication.server.presentation.ServerView
+import com.goalify.chat.android.authentication.server.ui.ServerFragment
+import com.goalify.chat.android.core.lifecycle.CancelStrategy
 import dagger.Module
 import dagger.Provides
 import kotlinx.coroutines.experimental.Job

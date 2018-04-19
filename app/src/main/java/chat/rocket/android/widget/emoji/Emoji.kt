@@ -1,4 +1,4 @@
-package chat.rocket.android.widget.emoji
+package com.goalify.chat.android.widget.emoji
 
 data class Emoji(
         val shortname: String,

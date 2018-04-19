@@ -1,4 +1,4 @@
-package chat.rocket.android.widget.autocompletion.ui
+package com.goalify.chat.android.widget.autocompletion.ui
 
 import android.content.Context
 import android.graphics.Canvas
@@ -19,9 +19,9 @@ import android.view.Gravity
 import android.view.View
 import android.widget.EditText
 import android.widget.FrameLayout
-import chat.rocket.android.R
-import chat.rocket.android.widget.autocompletion.model.SuggestionModel
-import chat.rocket.android.widget.autocompletion.ui.SuggestionsAdapter.Companion.CONSTRAINT_BOUND_TO_START
+import com.goalify.chat.android.R
+import com.goalify.chat.android.widget.autocompletion.model.SuggestionModel
+import com.goalify.chat.android.widget.autocompletion.ui.SuggestionsAdapter.Companion.CONSTRAINT_BOUND_TO_START
 import java.lang.ref.WeakReference
 import java.util.concurrent.atomic.AtomicInteger
 

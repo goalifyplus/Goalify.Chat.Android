@@ -1,4 +1,4 @@
-package chat.rocket.android.authentication.domain.model
+package com.goalify.chat.android.authentication.domain.model
 
 import chat.rocket.common.model.Token
 import se.ansman.kotshi.JsonSerializable

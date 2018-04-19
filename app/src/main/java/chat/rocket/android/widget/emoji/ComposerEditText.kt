@@ -1,4 +1,4 @@
-package chat.rocket.android.widget.emoji
+package com.goalify.chat.android.widget.emoji
 
 import android.content.Context
 import android.support.v7.widget.AppCompatEditText

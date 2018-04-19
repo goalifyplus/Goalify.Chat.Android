@@ -1,6 +1,6 @@
-package chat.rocket.android.server.domain
+package com.goalify.chat.android.server.domain
 
-import chat.rocket.android.util.extensions.mapToTypedArray
+import com.goalify.chat.android.util.extensions.mapToTypedArray
 import chat.rocket.core.model.Value
 
 typealias PublicSettings = Map<String, Value<Any>>

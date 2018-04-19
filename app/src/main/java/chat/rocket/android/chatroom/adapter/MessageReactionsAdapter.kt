@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.adapter
+package com.goalify.chat.android.chatroom.adapter
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -6,14 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import chat.rocket.android.R
-import chat.rocket.android.chatroom.viewmodel.ReactionViewModel
-import chat.rocket.android.dagger.DaggerLocalComponent
-import chat.rocket.android.infrastructure.LocalRepository
-import chat.rocket.android.widget.emoji.Emoji
-import chat.rocket.android.widget.emoji.EmojiListenerAdapter
-import chat.rocket.android.widget.emoji.EmojiPickerPopup
-import chat.rocket.android.widget.emoji.EmojiReactionListener
+import com.goalify.chat.android.R
+import com.goalify.chat.android.chatroom.viewmodel.ReactionViewModel
+import com.goalify.chat.android.dagger.DaggerLocalComponent
+import com.goalify.chat.android.infrastructure.LocalRepository
+import com.goalify.chat.android.widget.emoji.Emoji
+import com.goalify.chat.android.widget.emoji.EmojiListenerAdapter
+import com.goalify.chat.android.widget.emoji.EmojiPickerPopup
+import com.goalify.chat.android.widget.emoji.EmojiReactionListener
 import java.util.concurrent.CopyOnWriteArrayList
 import javax.inject.Inject
 

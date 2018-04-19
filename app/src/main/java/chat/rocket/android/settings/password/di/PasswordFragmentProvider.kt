@@ -1,6 +1,6 @@
-package chat.rocket.android.settings.password.di
+package com.goalify.chat.android.settings.password.di
 
-import chat.rocket.android.settings.password.ui.PasswordFragment
+import com.goalify.chat.android.settings.password.ui.PasswordFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

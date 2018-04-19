@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.adapter
+package com.goalify.chat.android.chatroom.adapter
 
 import DrawableHelper
 import android.content.Context
@@ -7,13 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import chat.rocket.android.R
-import chat.rocket.android.chatroom.adapter.PeopleSuggestionsAdapter.PeopleSuggestionViewHolder
-import chat.rocket.android.chatroom.viewmodel.suggestion.PeopleSuggestionViewModel
-import chat.rocket.android.util.extensions.setVisible
-import chat.rocket.android.widget.autocompletion.model.SuggestionModel
-import chat.rocket.android.widget.autocompletion.ui.BaseSuggestionViewHolder
-import chat.rocket.android.widget.autocompletion.ui.SuggestionsAdapter
+import com.goalify.chat.android.R
+import com.goalify.chat.android.chatroom.adapter.PeopleSuggestionsAdapter.PeopleSuggestionViewHolder
+import com.goalify.chat.android.chatroom.viewmodel.suggestion.PeopleSuggestionViewModel
+import com.goalify.chat.android.util.extensions.setVisible
+import com.goalify.chat.android.widget.autocompletion.model.SuggestionModel
+import com.goalify.chat.android.widget.autocompletion.ui.BaseSuggestionViewHolder
+import com.goalify.chat.android.widget.autocompletion.ui.SuggestionsAdapter
 import com.facebook.drawee.view.SimpleDraweeView
 
 class PeopleSuggestionsAdapter(context: Context) : SuggestionsAdapter<PeopleSuggestionViewHolder>("@") {

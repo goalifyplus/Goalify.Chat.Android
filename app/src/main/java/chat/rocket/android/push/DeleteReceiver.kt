@@ -1,4 +1,4 @@
-package chat.rocket.android.push
+package com.goalify.chat.android.push
 
 import android.content.BroadcastReceiver
 import android.content.Context

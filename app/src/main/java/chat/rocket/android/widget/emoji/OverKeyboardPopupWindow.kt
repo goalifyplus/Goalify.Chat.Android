@@ -16,7 +16,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package chat.rocket.android.widget.emoji
+package com.goalify.chat.android.widget.emoji
 
 import android.content.Context
 import android.graphics.Point
@@ -24,8 +24,8 @@ import android.graphics.Rect
 import android.os.Build
 import android.view.*
 import android.widget.PopupWindow
-import chat.rocket.android.BuildConfig
-import chat.rocket.android.R
+import com.goalify.chat.android.BuildConfig
+import com.goalify.chat.android.R
 
 /**
  * Base class to create popup window that appears over software keyboard.

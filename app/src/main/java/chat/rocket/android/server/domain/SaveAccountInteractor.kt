@@ -1,6 +1,6 @@
-package chat.rocket.android.server.domain
+package com.goalify.chat.android.server.domain
 
-import chat.rocket.android.server.domain.model.Account
+import com.goalify.chat.android.server.domain.model.Account
 import javax.inject.Inject
 
 class SaveAccountInteractor @Inject constructor(val repository: AccountsRepository) {

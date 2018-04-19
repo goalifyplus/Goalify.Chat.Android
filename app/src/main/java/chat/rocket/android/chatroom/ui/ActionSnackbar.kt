@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.ui
+package com.goalify.chat.android.chatroom.ui
 
 import android.support.design.widget.BaseTransientBottomBar
 import android.support.v4.view.ViewCompat
@@ -9,9 +9,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import chat.rocket.android.R
-import chat.rocket.android.helper.MessageParser
-import chat.rocket.android.util.extensions.content
+import com.goalify.chat.android.R
+import com.goalify.chat.android.helper.MessageParser
+import com.goalify.chat.android.util.extensions.content
 import ru.noties.markwon.Markwon
 
 class ActionSnackbar : BaseTransientBottomBar<ActionSnackbar> {

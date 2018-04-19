@@ -1,10 +1,10 @@
-package chat.rocket.android.chatroom.di
+package com.goalify.chat.android.chatroom.di
 
 import android.arch.lifecycle.LifecycleOwner
-import chat.rocket.android.chatroom.presentation.PinnedMessagesView
-import chat.rocket.android.chatroom.ui.PinnedMessagesFragment
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.dagger.scope.PerFragment
+import com.goalify.chat.android.chatroom.presentation.PinnedMessagesView
+import com.goalify.chat.android.chatroom.ui.PinnedMessagesFragment
+import com.goalify.chat.android.core.lifecycle.CancelStrategy
+import com.goalify.chat.android.dagger.scope.PerFragment
 import dagger.Module
 import dagger.Provides
 import kotlinx.coroutines.experimental.Job

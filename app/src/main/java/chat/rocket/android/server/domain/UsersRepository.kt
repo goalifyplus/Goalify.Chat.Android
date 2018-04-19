@@ -1,4 +1,4 @@
-package chat.rocket.android.server.domain
+package com.goalify.chat.android.server.domain
 
 import chat.rocket.common.model.Email
 import chat.rocket.common.model.User

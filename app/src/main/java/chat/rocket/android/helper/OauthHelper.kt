@@ -1,4 +1,4 @@
-package chat.rocket.android.helper
+package com.goalify.chat.android.helper
 
 object OauthHelper {
 

@@ -1,4 +1,4 @@
-package chat.rocket.android.profile.ui
+package com.goalify.chat.android.profile.ui
 
 import DrawableHelper
 import android.os.Build
@@ -6,11 +6,11 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.view.ActionMode
 import android.view.*
-import chat.rocket.android.R
-import chat.rocket.android.main.ui.MainActivity
-import chat.rocket.android.profile.presentation.ProfilePresenter
-import chat.rocket.android.profile.presentation.ProfileView
-import chat.rocket.android.util.extensions.*
+import com.goalify.chat.android.R
+import com.goalify.chat.android.main.ui.MainActivity
+import com.goalify.chat.android.profile.presentation.ProfilePresenter
+import com.goalify.chat.android.profile.presentation.ProfileView
+import com.goalify.chat.android.util.extensions.*
 import dagger.android.support.AndroidSupportInjection
 import io.reactivex.rxkotlin.Observables
 import kotlinx.android.synthetic.main.app_bar.*

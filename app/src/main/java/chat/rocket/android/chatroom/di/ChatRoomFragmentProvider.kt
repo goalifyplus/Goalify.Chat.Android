@@ -1,6 +1,6 @@
-package chat.rocket.android.chatroom.di
+package com.goalify.chat.android.chatroom.di
 
-import chat.rocket.android.chatroom.ui.ChatRoomFragment
+import com.goalify.chat.android.chatroom.ui.ChatRoomFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

@@ -1,10 +1,10 @@
-package chat.rocket.android.server.presentation
+package com.goalify.chat.android.server.presentation
 
-import chat.rocket.android.BuildConfig
-import chat.rocket.android.authentication.server.presentation.VersionCheckView
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.util.VersionInfo
-import chat.rocket.android.util.extensions.launchUI
+import com.goalify.chat.android.BuildConfig
+import com.goalify.chat.android.authentication.server.presentation.VersionCheckView
+import com.goalify.chat.android.core.lifecycle.CancelStrategy
+import com.goalify.chat.android.util.VersionInfo
+import com.goalify.chat.android.util.extensions.launchUI
 import chat.rocket.core.RocketChatClient
 import chat.rocket.core.internal.rest.serverInfo
 import timber.log.Timber

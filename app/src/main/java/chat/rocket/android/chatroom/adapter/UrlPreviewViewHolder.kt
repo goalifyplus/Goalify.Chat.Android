@@ -1,12 +1,12 @@
-package chat.rocket.android.chatroom.adapter
+package com.goalify.chat.android.chatroom.adapter
 
 import android.content.Intent
 import android.net.Uri
 import android.view.View
-import chat.rocket.android.chatroom.viewmodel.UrlPreviewViewModel
-import chat.rocket.android.util.extensions.content
-import chat.rocket.android.util.extensions.setVisible
-import chat.rocket.android.widget.emoji.EmojiReactionListener
+import com.goalify.chat.android.chatroom.viewmodel.UrlPreviewViewModel
+import com.goalify.chat.android.util.extensions.content
+import com.goalify.chat.android.util.extensions.setVisible
+import com.goalify.chat.android.widget.emoji.EmojiReactionListener
 import kotlinx.android.synthetic.main.message_url_preview.view.*
 
 class UrlPreviewViewHolder(itemView: View,

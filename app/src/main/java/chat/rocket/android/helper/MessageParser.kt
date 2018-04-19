@@ -1,4 +1,4 @@
-package chat.rocket.android.helper
+package com.goalify.chat.android.helper
 
 import android.app.Application
 import android.content.ActivityNotFoundException
@@ -16,10 +16,10 @@ import android.text.style.ClickableSpan
 import android.text.style.ReplacementSpan
 import android.util.Patterns
 import android.view.View
-import chat.rocket.android.R
-import chat.rocket.android.widget.emoji.EmojiParser
-import chat.rocket.android.widget.emoji.EmojiRepository
-import chat.rocket.android.widget.emoji.EmojiTypefaceSpan
+import com.goalify.chat.android.R
+import com.goalify.chat.android.widget.emoji.EmojiParser
+import com.goalify.chat.android.widget.emoji.EmojiRepository
+import com.goalify.chat.android.widget.emoji.EmojiTypefaceSpan
 import chat.rocket.common.model.SimpleUser
 import chat.rocket.core.model.Message
 import org.commonmark.node.AbstractVisitor

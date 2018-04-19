@@ -1,9 +1,9 @@
-package chat.rocket.android.settings.password.presentation
+package com.goalify.chat.android.settings.password.presentation
 
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
-import chat.rocket.android.server.infraestructure.RocketChatClientFactory
-import chat.rocket.android.util.extensions.launchUI
+import com.goalify.chat.android.core.lifecycle.CancelStrategy
+import com.goalify.chat.android.server.domain.GetCurrentServerInteractor
+import com.goalify.chat.android.server.infraestructure.RocketChatClientFactory
+import com.goalify.chat.android.util.extensions.launchUI
 import chat.rocket.common.RocketChatException
 import chat.rocket.core.RocketChatClient
 import chat.rocket.core.internal.rest.me

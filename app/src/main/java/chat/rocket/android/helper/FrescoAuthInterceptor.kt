@@ -1,7 +1,7 @@
-package chat.rocket.android.helper
+package com.goalify.chat.android.helper
 
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
-import chat.rocket.android.server.domain.TokenRepository
+import com.goalify.chat.android.server.domain.GetCurrentServerInteractor
+import com.goalify.chat.android.server.domain.TokenRepository
 import okhttp3.Interceptor
 import okhttp3.Response
 

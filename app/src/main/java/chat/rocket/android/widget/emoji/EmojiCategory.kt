@@ -1,9 +1,9 @@
-package chat.rocket.android.widget.emoji
+package com.goalify.chat.android.widget.emoji
 
 import android.support.annotation.DrawableRes
 import android.text.SpannableString
 import android.text.Spanned
-import chat.rocket.android.R
+import com.goalify.chat.android.R
 
 enum class EmojiCategory {
     RECENTS {

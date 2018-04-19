@@ -1,6 +1,6 @@
-package chat.rocket.android.chatroom.di
+package com.goalify.chat.android.chatroom.di
 
-import chat.rocket.android.chatroom.ui.PinnedMessagesFragment
+import com.goalify.chat.android.chatroom.ui.PinnedMessagesFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

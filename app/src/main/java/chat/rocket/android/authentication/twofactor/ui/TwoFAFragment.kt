@@ -1,4 +1,4 @@
-package chat.rocket.android.authentication.twofactor.ui
+package com.goalify.chat.android.authentication.twofactor.ui
 
 import DrawableHelper
 import android.content.Context
@@ -9,10 +9,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
-import chat.rocket.android.R
-import chat.rocket.android.authentication.twofactor.presentation.TwoFAPresenter
-import chat.rocket.android.authentication.twofactor.presentation.TwoFAView
-import chat.rocket.android.util.extensions.*
+import com.goalify.chat.android.R
+import com.goalify.chat.android.authentication.twofactor.presentation.TwoFAPresenter
+import com.goalify.chat.android.authentication.twofactor.presentation.TwoFAView
+import com.goalify.chat.android.util.extensions.*
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.fragment_authentication_two_fa.*
 import javax.inject.Inject

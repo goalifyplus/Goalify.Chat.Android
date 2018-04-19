@@ -1,6 +1,6 @@
-package chat.rocket.android.authentication.signup.di
+package com.goalify.chat.android.authentication.signup.di
 
-import chat.rocket.android.authentication.signup.ui.SignupFragment
+import com.goalify.chat.android.authentication.signup.ui.SignupFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

@@ -1,4 +1,4 @@
-package chat.rocket.android.chatrooms.ui
+package com.goalify.chat.android.chatrooms.ui
 
 import android.app.AlertDialog
 import android.content.Context
@@ -14,17 +14,17 @@ import android.support.v7.widget.SearchView
 import android.view.*
 import android.widget.CheckBox
 import android.widget.RadioGroup
-import chat.rocket.android.R
-import chat.rocket.android.chatrooms.presentation.ChatRoomsPresenter
-import chat.rocket.android.chatrooms.presentation.ChatRoomsView
-import chat.rocket.android.infrastructure.LocalRepository
-import chat.rocket.android.helper.ChatRoomsSortOrder
-import chat.rocket.android.helper.Constants
-import chat.rocket.android.helper.SharedPreferenceHelper
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
-import chat.rocket.android.server.domain.SettingsRepository
-import chat.rocket.android.util.extensions.*
-import chat.rocket.android.widget.DividerItemDecoration
+import com.goalify.chat.android.R
+import com.goalify.chat.android.chatrooms.presentation.ChatRoomsPresenter
+import com.goalify.chat.android.chatrooms.presentation.ChatRoomsView
+import com.goalify.chat.android.infrastructure.LocalRepository
+import com.goalify.chat.android.helper.ChatRoomsSortOrder
+import com.goalify.chat.android.helper.Constants
+import com.goalify.chat.android.helper.SharedPreferenceHelper
+import com.goalify.chat.android.server.domain.GetCurrentServerInteractor
+import com.goalify.chat.android.server.domain.SettingsRepository
+import com.goalify.chat.android.util.extensions.*
+import com.goalify.chat.android.widget.DividerItemDecoration
 import chat.rocket.common.model.RoomType
 import chat.rocket.core.internal.realtime.State
 import chat.rocket.core.model.ChatRoom
@@ -158,7 +158,7 @@ class ChatRoomsFragment : Fragment(), ChatRoomsView {
             listJob?.cancel()
             listJob = launch(UI) {
                 val adapter = recycler_view.adapter as SimpleSectionedRecyclerViewAdapter
-                // FIXME https://fabric.io/rocketchat3/android/apps/chat.rocket.android.dev/issues/5a90d4718cb3c2fa63b3f557?time=last-seven-days
+                // FIXME https://fabric.io/rocketchat3/android/apps/com.goalify.chat.android.dev/issues/5a90d4718cb3c2fa63b3f557?time=last-seven-days
                 // TODO - fix this bug to reenable DiffUtil
                 val diff = async(CommonPool) {
                     DiffUtil.calculateDiff(RoomsDiffCallback(adapter.baseAdapter.dataSet, newDataSet))

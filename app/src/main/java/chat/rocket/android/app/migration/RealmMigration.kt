@@ -1,7 +1,7 @@
-package chat.rocket.android.app.migration
+package com.goalify.chat.android.app.migration
 
-import chat.rocket.android.BuildConfig
-import chat.rocket.android.app.migration.model.RealmUser
+import com.goalify.chat.android.BuildConfig
+import com.goalify.chat.android.app.migration.model.RealmUser
 import io.realm.DynamicRealm
 import io.realm.RealmMigration
 
@@ -53,7 +53,7 @@ class RealmMigration : RealmMigration {
     }
 
     override fun equals(o: Any?): Boolean {
-        return o is chat.rocket.android.app.migration.RealmMigration
+        return o is com.goalify.chat.android.app.migration.RealmMigration
     }
     // end hack
 }

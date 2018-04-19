@@ -1,4 +1,4 @@
-package chat.rocket.android.util
+package com.goalify.chat.android.util
 
 data class VersionInfo(
         val major: Int,

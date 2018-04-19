@@ -1,6 +1,6 @@
-package chat.rocket.android.server.infraestructure
+package com.goalify.chat.android.server.infraestructure
 
-import chat.rocket.android.server.domain.MessagesRepository
+import com.goalify.chat.android.server.domain.MessagesRepository
 import chat.rocket.core.model.Message
 
 class MemoryMessagesRepository : MessagesRepository {

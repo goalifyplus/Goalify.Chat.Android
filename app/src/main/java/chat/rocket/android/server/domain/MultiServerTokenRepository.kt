@@ -1,6 +1,6 @@
-package chat.rocket.android.server.domain
+package com.goalify.chat.android.server.domain
 
-import chat.rocket.android.authentication.domain.model.TokenModel
+import com.goalify.chat.android.authentication.domain.model.TokenModel
 
 interface MultiServerTokenRepository {
     fun get(server: String): TokenModel?

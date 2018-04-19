@@ -1,4 +1,4 @@
-package chat.rocket.android.server.infraestructure
+package com.goalify.chat.android.server.infraestructure
 
 import timber.log.Timber
 import javax.inject.Inject

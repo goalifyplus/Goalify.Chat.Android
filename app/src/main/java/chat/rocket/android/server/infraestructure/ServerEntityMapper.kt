@@ -1,7 +1,7 @@
-package chat.rocket.android.server.infraestructure
+package com.goalify.chat.android.server.infraestructure
 
-import chat.rocket.android.server.domain.model.Server
-import chat.rocket.android.util.DataToDomain
+import com.goalify.chat.android.server.domain.model.Server
+import com.goalify.chat.android.util.DataToDomain
 
 class ServerEntityMapper : DataToDomain<ServerEntity, Server> {
     override fun translate(data: ServerEntity): Server {

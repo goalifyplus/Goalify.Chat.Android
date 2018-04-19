@@ -1,4 +1,4 @@
-package chat.rocket.android.helper
+package com.goalify.chat.android.helper
 
 import android.app.Activity
 import android.content.Context

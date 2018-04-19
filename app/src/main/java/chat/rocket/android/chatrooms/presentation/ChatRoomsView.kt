@@ -1,7 +1,7 @@
-package chat.rocket.android.chatrooms.presentation
+package com.goalify.chat.android.chatrooms.presentation
 
-import chat.rocket.android.core.behaviours.LoadingView
-import chat.rocket.android.core.behaviours.MessageView
+import com.goalify.chat.android.core.behaviours.LoadingView
+import com.goalify.chat.android.core.behaviours.MessageView
 import chat.rocket.core.internal.realtime.State
 import chat.rocket.core.model.ChatRoom
 

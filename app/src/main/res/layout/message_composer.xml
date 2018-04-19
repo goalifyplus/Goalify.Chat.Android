@@ -60,7 +60,7 @@
                 android:contentDescription="@string/msg_content_description_show_attachment_options"
                 android:src="@drawable/ic_reaction_24dp" />
 
-            <chat.rocket.android.widget.emoji.ComposerEditText
+            <com.goalify.chat.android.widget.emoji.ComposerEditText
                 android:id="@+id/text_message"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

@@ -1,6 +1,6 @@
-package chat.rocket.android
+package com.goalify.chat.android
 
-import chat.rocket.android.server.infraestructure.MemoryMessagesRepository
+import com.goalify.chat.android.server.infraestructure.MemoryMessagesRepository
 import chat.rocket.core.model.Message
 import chat.rocket.core.model.MessageType
 import org.hamcrest.CoreMatchers.notNullValue

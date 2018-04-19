@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.viewmodel
+package com.goalify.chat.android.chatroom.viewmodel
 
 import chat.rocket.core.model.Message
 import java.security.InvalidParameterException

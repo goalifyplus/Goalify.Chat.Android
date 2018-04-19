@@ -1,4 +1,4 @@
-package chat.rocket.android.chatrooms.ui
+package com.goalify.chat.android.chatrooms.ui
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView

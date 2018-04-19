@@ -31,7 +31,7 @@
 
     </FrameLayout>
 
-    <chat.rocket.android.widget.autocompletion.ui.SuggestionsView
+    <com.goalify.chat.android.widget.autocompletion.ui.SuggestionsView
         android:id="@+id/suggestions_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

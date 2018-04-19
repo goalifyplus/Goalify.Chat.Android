@@ -1,6 +1,6 @@
-package chat.rocket.android.server.domain
+package com.goalify.chat.android.server.domain
 
-import chat.rocket.android.server.infraestructure.RocketChatClientFactory
+import com.goalify.chat.android.server.infraestructure.RocketChatClientFactory
 import chat.rocket.core.internal.rest.settings
 import kotlinx.coroutines.experimental.CommonPool
 import kotlinx.coroutines.experimental.async

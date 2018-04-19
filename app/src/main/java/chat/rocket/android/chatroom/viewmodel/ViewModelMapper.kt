@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.viewmodel
+package com.goalify.chat.android.chatroom.viewmodel
 
 import DateTimeHelper
 import android.content.Context
@@ -7,12 +7,12 @@ import android.graphics.Typeface
 import android.text.SpannableStringBuilder
 import android.text.style.ForegroundColorSpan
 import android.text.style.StyleSpan
-import chat.rocket.android.R
-import chat.rocket.android.helper.MessageParser
-import chat.rocket.android.helper.UrlHelper
-import chat.rocket.android.infrastructure.LocalRepository
-import chat.rocket.android.server.domain.*
-import chat.rocket.android.widget.emoji.EmojiParser
+import com.goalify.chat.android.R
+import com.goalify.chat.android.helper.MessageParser
+import com.goalify.chat.android.helper.UrlHelper
+import com.goalify.chat.android.infrastructure.LocalRepository
+import com.goalify.chat.android.server.domain.*
+import com.goalify.chat.android.widget.emoji.EmojiParser
 import chat.rocket.core.model.Message
 import chat.rocket.core.model.MessageType
 import chat.rocket.core.model.Value

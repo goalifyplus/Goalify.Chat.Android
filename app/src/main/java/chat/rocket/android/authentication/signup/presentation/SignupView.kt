@@ -1,8 +1,8 @@
-package chat.rocket.android.authentication.signup.presentation
+package com.goalify.chat.android.authentication.signup.presentation
 
-import chat.rocket.android.core.behaviours.InternetView
-import chat.rocket.android.core.behaviours.LoadingView
-import chat.rocket.android.core.behaviours.MessageView
+import com.goalify.chat.android.core.behaviours.InternetView
+import com.goalify.chat.android.core.behaviours.LoadingView
+import com.goalify.chat.android.core.behaviours.MessageView
 
 interface SignupView : LoadingView, MessageView, InternetView {
 

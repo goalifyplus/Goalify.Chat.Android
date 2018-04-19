@@ -1,12 +1,12 @@
-package chat.rocket.android.chatroom.presentation
+package com.goalify.chat.android.chatroom.presentation
 
 import android.net.Uri
-import chat.rocket.android.chatroom.viewmodel.BaseViewModel
-import chat.rocket.android.chatroom.viewmodel.suggestion.ChatRoomSuggestionViewModel
-import chat.rocket.android.chatroom.viewmodel.suggestion.CommandSuggestionViewModel
-import chat.rocket.android.chatroom.viewmodel.suggestion.PeopleSuggestionViewModel
-import chat.rocket.android.core.behaviours.LoadingView
-import chat.rocket.android.core.behaviours.MessageView
+import com.goalify.chat.android.chatroom.viewmodel.BaseViewModel
+import com.goalify.chat.android.chatroom.viewmodel.suggestion.ChatRoomSuggestionViewModel
+import com.goalify.chat.android.chatroom.viewmodel.suggestion.CommandSuggestionViewModel
+import com.goalify.chat.android.chatroom.viewmodel.suggestion.PeopleSuggestionViewModel
+import com.goalify.chat.android.core.behaviours.LoadingView
+import com.goalify.chat.android.core.behaviours.MessageView
 import chat.rocket.core.internal.realtime.State
 
 interface ChatRoomView : LoadingView, MessageView {

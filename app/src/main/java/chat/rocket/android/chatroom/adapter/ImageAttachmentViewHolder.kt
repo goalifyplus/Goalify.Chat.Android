@@ -1,10 +1,10 @@
-package chat.rocket.android.chatroom.adapter
+package com.goalify.chat.android.chatroom.adapter
 
 import android.view.View
-import chat.rocket.android.chatroom.viewmodel.ImageAttachmentViewModel
+import com.goalify.chat.android.chatroom.viewmodel.ImageAttachmentViewModel
 import com.facebook.drawee.backends.pipeline.Fresco
 import com.facebook.drawee.interfaces.DraweeController
-import chat.rocket.android.widget.emoji.EmojiReactionListener
+import com.goalify.chat.android.widget.emoji.EmojiReactionListener
 import com.stfalcon.frescoimageviewer.ImageViewer
 import kotlinx.android.synthetic.main.message_attachment.view.*
 

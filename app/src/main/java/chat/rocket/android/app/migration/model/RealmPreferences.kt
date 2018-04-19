@@ -1,4 +1,4 @@
-package chat.rocket.android.app.migration.model
+package com.goalify.chat.android.app.migration.model
 
 import io.realm.RealmObject
 import io.realm.annotations.PrimaryKey

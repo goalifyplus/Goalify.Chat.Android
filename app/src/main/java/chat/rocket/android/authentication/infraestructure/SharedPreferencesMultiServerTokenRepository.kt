@@ -1,10 +1,10 @@
-package chat.rocket.android.authentication.infraestructure
+package com.goalify.chat.android.authentication.infraestructure
 
-import chat.rocket.android.authentication.domain.model.TokenModel
-import chat.rocket.android.dagger.scope.PerActivity
-import chat.rocket.android.infrastructure.LocalRepository
-import chat.rocket.android.infrastructure.LocalRepository.Companion.TOKEN_KEY
-import chat.rocket.android.server.domain.MultiServerTokenRepository
+import com.goalify.chat.android.authentication.domain.model.TokenModel
+import com.goalify.chat.android.dagger.scope.PerActivity
+import com.goalify.chat.android.infrastructure.LocalRepository
+import com.goalify.chat.android.infrastructure.LocalRepository.Companion.TOKEN_KEY
+import com.goalify.chat.android.server.domain.MultiServerTokenRepository
 import com.squareup.moshi.Moshi
 
 @PerActivity

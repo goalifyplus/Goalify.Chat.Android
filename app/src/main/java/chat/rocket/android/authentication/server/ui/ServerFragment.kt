@@ -1,4 +1,4 @@
-package chat.rocket.android.authentication.server.ui
+package com.goalify.chat.android.authentication.server.ui
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -6,11 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.ViewTreeObserver
-import chat.rocket.android.R
-import chat.rocket.android.authentication.server.presentation.ServerPresenter
-import chat.rocket.android.authentication.server.presentation.ServerView
-import chat.rocket.android.helper.KeyboardHelper
-import chat.rocket.android.util.extensions.*
+import com.goalify.chat.android.R
+import com.goalify.chat.android.authentication.server.presentation.ServerPresenter
+import com.goalify.chat.android.authentication.server.presentation.ServerView
+import com.goalify.chat.android.helper.KeyboardHelper
+import com.goalify.chat.android.util.extensions.*
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.fragment_authentication_server.*
 import javax.inject.Inject

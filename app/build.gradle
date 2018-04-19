@@ -10,10 +10,10 @@ android {
     buildToolsVersion versions.buildTools
 
     defaultConfig {
-        applicationId "chat.rocket.android"
+        applicationId "com.goalify.chat.android"
         minSdkVersion 21
         targetSdkVersion versions.targetSdk
-        versionCode 2001
+        versionCode 1
         versionName "2.0.0-beta1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true

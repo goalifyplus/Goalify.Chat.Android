@@ -1,4 +1,4 @@
-package chat.rocket.android.push
+package com.goalify.chat.android.push
 
 import android.os.Bundle
 import com.google.android.gms.gcm.GcmListenerService

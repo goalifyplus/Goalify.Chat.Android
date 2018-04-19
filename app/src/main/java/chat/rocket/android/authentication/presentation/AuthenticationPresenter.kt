@@ -1,10 +1,10 @@
-package chat.rocket.android.authentication.presentation
+package com.goalify.chat.android.authentication.presentation
 
-import chat.rocket.android.infrastructure.LocalRepository
-import chat.rocket.android.server.domain.GetAccountInteractor
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
-import chat.rocket.android.server.domain.SettingsRepository
-import chat.rocket.android.server.domain.TokenRepository
+import com.goalify.chat.android.infrastructure.LocalRepository
+import com.goalify.chat.android.server.domain.GetAccountInteractor
+import com.goalify.chat.android.server.domain.GetCurrentServerInteractor
+import com.goalify.chat.android.server.domain.SettingsRepository
+import com.goalify.chat.android.server.domain.TokenRepository
 import javax.inject.Inject
 
 class AuthenticationPresenter @Inject constructor(

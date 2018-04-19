@@ -1,4 +1,4 @@
-package chat.rocket.android.server.domain
+package com.goalify.chat.android.server.domain
 
 import chat.rocket.common.model.RoomType
 import chat.rocket.core.model.Room

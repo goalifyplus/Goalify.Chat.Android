@@ -1,7 +1,7 @@
-package chat.rocket.android.main.viewmodel
+package com.goalify.chat.android.main.viewmodel
 
-import chat.rocket.android.helper.UrlHelper
-import chat.rocket.android.server.domain.*
+import com.goalify.chat.android.helper.UrlHelper
+import com.goalify.chat.android.server.domain.*
 import chat.rocket.core.model.Myself
 import javax.inject.Inject
 

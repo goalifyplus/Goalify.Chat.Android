@@ -1,6 +1,6 @@
-package chat.rocket.android.widget.autocompletion.strategy.trie.data
+package com.goalify.chat.android.widget.autocompletion.strategy.trie.data
 
-import chat.rocket.android.widget.autocompletion.model.SuggestionModel
+import com.goalify.chat.android.widget.autocompletion.model.SuggestionModel
 
 internal class Trie {
     private val root = TrieNode(' ')

@@ -1,4 +1,4 @@
-package chat.rocket.android.main.adapter
+package com.goalify.chat.android.main.adapter
 
 import android.support.v7.widget.RecyclerView
 import android.view.View

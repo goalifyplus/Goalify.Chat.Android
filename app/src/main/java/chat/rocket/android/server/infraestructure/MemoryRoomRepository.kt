@@ -1,7 +1,7 @@
-package chat.rocket.android.server.infraestructure
+package com.goalify.chat.android.server.infraestructure
 
-import chat.rocket.android.server.domain.RoomRepository
-import chat.rocket.android.server.domain.RoomRepository.Query
+import com.goalify.chat.android.server.domain.RoomRepository
+import com.goalify.chat.android.server.domain.RoomRepository.Query
 import chat.rocket.core.model.Room
 import java.util.concurrent.CopyOnWriteArrayList
 

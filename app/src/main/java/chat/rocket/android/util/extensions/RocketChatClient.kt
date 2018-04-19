@@ -1,7 +1,7 @@
-package chat.rocket.android.util.extensions
+package com.goalify.chat.android.util.extensions
 
-import chat.rocket.android.server.domain.model.Account
-import chat.rocket.android.server.infraestructure.RocketChatClientFactory
+import com.goalify.chat.android.server.domain.model.Account
+import com.goalify.chat.android.server.infraestructure.RocketChatClientFactory
 import chat.rocket.core.RocketChatClient
 import chat.rocket.core.internal.rest.registerPushToken
 import kotlinx.coroutines.experimental.CommonPool

@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.ui.bottomsheet
+package com.goalify.chat.android.chatroom.ui.bottomsheet
 
 import android.support.design.widget.BottomSheetDialog
 import android.support.v7.widget.LinearLayoutManager

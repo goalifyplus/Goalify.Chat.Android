@@ -1,9 +1,9 @@
-package chat.rocket.android.dagger.module
+package com.goalify.chat.android.dagger.module
 
-import chat.rocket.android.push.FirebaseTokenService
-import chat.rocket.android.push.GcmListenerService
-import chat.rocket.android.push.di.FirebaseTokenServiceProvider
-import chat.rocket.android.push.di.GcmListenerServiceProvider
+import com.goalify.chat.android.push.FirebaseTokenService
+import com.goalify.chat.android.push.GcmListenerService
+import com.goalify.chat.android.push.di.FirebaseTokenServiceProvider
+import com.goalify.chat.android.push.di.GcmListenerServiceProvider
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

@@ -1,4 +1,4 @@
-package chat.rocket.android.widget.emoji
+package com.goalify.chat.android.widget.emoji
 
 import android.support.v4.view.PagerAdapter
 import android.support.v7.widget.DefaultItemAnimator
@@ -8,8 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import chat.rocket.android.R
-import chat.rocket.android.util.extensions.setVisible
+import com.goalify.chat.android.R
+import com.goalify.chat.android.util.extensions.setVisible
 import java.util.*
 
 class CategoryPagerAdapter(val listener: EmojiKeyboardListener) : PagerAdapter() {

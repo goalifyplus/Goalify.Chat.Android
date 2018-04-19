@@ -1,9 +1,9 @@
-package chat.rocket.android.server.infraestructure
+package com.goalify.chat.android.server.infraestructure
 
-import chat.rocket.android.infrastructure.LocalRepository
-import chat.rocket.android.infrastructure.LocalRepository.Companion.SETTINGS_KEY
-import chat.rocket.android.server.domain.PublicSettings
-import chat.rocket.android.server.domain.SettingsRepository
+import com.goalify.chat.android.infrastructure.LocalRepository
+import com.goalify.chat.android.infrastructure.LocalRepository.Companion.SETTINGS_KEY
+import com.goalify.chat.android.server.domain.PublicSettings
+import com.goalify.chat.android.server.domain.SettingsRepository
 import chat.rocket.core.internal.SettingsAdapter
 
 class SharedPreferencesSettingsRepository(private val localRepository: LocalRepository) : SettingsRepository {

@@ -1,6 +1,6 @@
-package chat.rocket.android.chatroom.viewmodel
+package com.goalify.chat.android.chatroom.viewmodel
 
-import chat.rocket.android.R
+import com.goalify.chat.android.R
 import chat.rocket.core.model.Message
 
 data class MessageAttachmentViewModel(

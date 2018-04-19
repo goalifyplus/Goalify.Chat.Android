@@ -1,15 +1,15 @@
-package chat.rocket.android.authentication.twofactor.presentation
+package com.goalify.chat.android.authentication.twofactor.presentation
 
-import chat.rocket.android.authentication.presentation.AuthenticationNavigator
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.helper.NetworkHelper
-import chat.rocket.android.helper.UrlHelper
-import chat.rocket.android.infrastructure.LocalRepository
-import chat.rocket.android.server.domain.*
-import chat.rocket.android.server.domain.model.Account
-import chat.rocket.android.server.infraestructure.RocketChatClientFactory
-import chat.rocket.android.util.extensions.launchUI
-import chat.rocket.android.util.extensions.registerPushToken
+import com.goalify.chat.android.authentication.presentation.AuthenticationNavigator
+import com.goalify.chat.android.core.lifecycle.CancelStrategy
+import com.goalify.chat.android.helper.NetworkHelper
+import com.goalify.chat.android.helper.UrlHelper
+import com.goalify.chat.android.infrastructure.LocalRepository
+import com.goalify.chat.android.server.domain.*
+import com.goalify.chat.android.server.domain.model.Account
+import com.goalify.chat.android.server.infraestructure.RocketChatClientFactory
+import com.goalify.chat.android.util.extensions.launchUI
+import com.goalify.chat.android.util.extensions.registerPushToken
 import chat.rocket.common.RocketChatAuthException
 import chat.rocket.common.RocketChatException
 import chat.rocket.common.util.ifNull

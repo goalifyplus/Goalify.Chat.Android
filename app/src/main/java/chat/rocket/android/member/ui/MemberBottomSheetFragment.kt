@@ -1,14 +1,14 @@
-package chat.rocket.android.member.ui
+package com.goalify.chat.android.member.ui
 
 import android.os.Bundle
 import android.support.design.widget.BottomSheetDialogFragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import chat.rocket.android.R
-import chat.rocket.android.util.extensions.content
-import chat.rocket.android.util.extensions.setVisible
-import chat.rocket.android.util.extensions.textContent
+import com.goalify.chat.android.R
+import com.goalify.chat.android.util.extensions.content
+import com.goalify.chat.android.util.extensions.setVisible
+import com.goalify.chat.android.util.extensions.textContent
 import kotlinx.android.synthetic.main.fragment_member_bottom_sheet.*
 
 fun newInstance(avatarUri: String, realName: String, username: String, email: String, utcOffset: String): BottomSheetDialogFragment {

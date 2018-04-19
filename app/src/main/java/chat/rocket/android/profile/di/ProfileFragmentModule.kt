@@ -1,9 +1,9 @@
-package chat.rocket.android.profile.di
+package com.goalify.chat.android.profile.di
 
 import android.arch.lifecycle.LifecycleOwner
-import chat.rocket.android.dagger.scope.PerFragment
-import chat.rocket.android.profile.presentation.ProfileView
-import chat.rocket.android.profile.ui.ProfileFragment
+import com.goalify.chat.android.dagger.scope.PerFragment
+import com.goalify.chat.android.profile.presentation.ProfileView
+import com.goalify.chat.android.profile.ui.ProfileFragment
 import dagger.Module
 import dagger.Provides
 

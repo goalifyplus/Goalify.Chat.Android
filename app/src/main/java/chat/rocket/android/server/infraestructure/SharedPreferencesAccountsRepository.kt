@@ -1,9 +1,9 @@
-package chat.rocket.android.server.infraestructure
+package com.goalify.chat.android.server.infraestructure
 
 import android.content.SharedPreferences
 import androidx.content.edit
-import chat.rocket.android.server.domain.AccountsRepository
-import chat.rocket.android.server.domain.model.Account
+import com.goalify.chat.android.server.domain.AccountsRepository
+import com.goalify.chat.android.server.domain.model.Account
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
 import kotlinx.coroutines.experimental.CommonPool

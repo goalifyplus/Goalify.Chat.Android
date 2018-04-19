@@ -1,4 +1,4 @@
-package chat.rocket.android.core.behaviours
+package com.goalify.chat.android.core.behaviours
 
 import android.support.annotation.StringRes
 

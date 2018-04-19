@@ -1,11 +1,11 @@
-package chat.rocket.android.helper
+package com.goalify.chat.android.helper
 
 import android.text.SpannableString
 import android.text.Spanned
 import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
 import android.widget.TextView
-import chat.rocket.android.util.extensions.ifEmpty
+import com.goalify.chat.android.util.extensions.ifEmpty
 
 object TextHelper {
 

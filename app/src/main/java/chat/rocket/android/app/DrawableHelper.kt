@@ -4,7 +4,7 @@ import android.support.v4.content.ContextCompat
 import android.support.v4.graphics.drawable.DrawableCompat
 import android.widget.EditText
 import android.widget.TextView
-import chat.rocket.android.R
+import com.goalify.chat.android.R
 import chat.rocket.common.model.UserStatus
 
 object DrawableHelper {

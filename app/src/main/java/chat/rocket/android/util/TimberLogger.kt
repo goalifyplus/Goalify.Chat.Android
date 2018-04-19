@@ -1,4 +1,4 @@
-package chat.rocket.android.util
+package com.goalify.chat.android.util
 
 import chat.rocket.common.util.PlatformLogger
 import timber.log.Timber

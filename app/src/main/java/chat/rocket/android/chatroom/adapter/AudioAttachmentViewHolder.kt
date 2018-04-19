@@ -1,10 +1,10 @@
-package chat.rocket.android.chatroom.adapter
+package com.goalify.chat.android.chatroom.adapter
 
 import android.view.View
-import chat.rocket.android.chatroom.viewmodel.AudioAttachmentViewModel
-import chat.rocket.android.player.PlayerActivity
-import chat.rocket.android.util.extensions.setVisible
-import chat.rocket.android.widget.emoji.EmojiReactionListener
+import com.goalify.chat.android.chatroom.viewmodel.AudioAttachmentViewModel
+import com.goalify.chat.android.player.PlayerActivity
+import com.goalify.chat.android.util.extensions.setVisible
+import com.goalify.chat.android.widget.emoji.EmojiReactionListener
 import kotlinx.android.synthetic.main.message_attachment.view.*
 
 class AudioAttachmentViewHolder(itemView: View,

@@ -1,4 +1,4 @@
-package chat.rocket.android.util.extensions
+package com.goalify.chat.android.util.extensions
 
 import android.widget.EditText
 import com.jakewharton.rxbinding2.widget.RxTextView

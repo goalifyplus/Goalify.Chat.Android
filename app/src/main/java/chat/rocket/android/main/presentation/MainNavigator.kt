@@ -1,15 +1,15 @@
-package chat.rocket.android.main.presentation
+package com.goalify.chat.android.main.presentation
 
 import android.content.Context
-import chat.rocket.android.R
-import chat.rocket.android.authentication.ui.newServerIntent
-import chat.rocket.android.chatroom.ui.chatRoomIntent
-import chat.rocket.android.chatrooms.ui.ChatRoomsFragment
-import chat.rocket.android.main.ui.MainActivity
-import chat.rocket.android.profile.ui.ProfileFragment
-import chat.rocket.android.server.ui.changeServerIntent
-import chat.rocket.android.settings.ui.SettingsFragment
-import chat.rocket.android.util.extensions.addFragment
+import com.goalify.chat.android.R
+import com.goalify.chat.android.authentication.ui.newServerIntent
+import com.goalify.chat.android.chatroom.ui.chatRoomIntent
+import com.goalify.chat.android.chatrooms.ui.ChatRoomsFragment
+import com.goalify.chat.android.main.ui.MainActivity
+import com.goalify.chat.android.profile.ui.ProfileFragment
+import com.goalify.chat.android.server.ui.changeServerIntent
+import com.goalify.chat.android.settings.ui.SettingsFragment
+import com.goalify.chat.android.util.extensions.addFragment
 
 class MainNavigator(internal val activity: MainActivity) {
 

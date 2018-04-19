@@ -1,9 +1,9 @@
-package chat.rocket.android.chatroom.presentation
+package com.goalify.chat.android.chatroom.presentation
 
-import chat.rocket.android.R
-import chat.rocket.android.chatroom.ui.ChatRoomActivity
-import chat.rocket.android.members.ui.newInstance
-import chat.rocket.android.util.extensions.addFragmentBackStack
+import com.goalify.chat.android.R
+import com.goalify.chat.android.chatroom.ui.ChatRoomActivity
+import com.goalify.chat.android.members.ui.newInstance
+import com.goalify.chat.android.util.extensions.addFragmentBackStack
 
 class ChatRoomNavigator(internal val activity: ChatRoomActivity) {
 

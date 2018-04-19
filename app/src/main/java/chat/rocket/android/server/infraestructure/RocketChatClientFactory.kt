@@ -1,8 +1,8 @@
-package chat.rocket.android.server.infraestructure
+package com.goalify.chat.android.server.infraestructure
 
 import chat.rocket.common.util.PlatformLogger
 import chat.rocket.core.RocketChatClient
-import chat.rocket.android.server.domain.TokenRepository
+import com.goalify.chat.android.server.domain.TokenRepository
 import okhttp3.OkHttpClient
 import timber.log.Timber
 import javax.inject.Inject

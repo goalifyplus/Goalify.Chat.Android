@@ -1,4 +1,4 @@
-package chat.rocket.android.widget.autocompletion.model
+package com.goalify.chat.android.widget.autocompletion.model
 
 abstract class SuggestionModel(val text: String, // This is the text key for searches, must be unique.
                                val searchList: List<String> = emptyList(),  // Where to search for matches.

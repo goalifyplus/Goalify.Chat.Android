@@ -1,4 +1,4 @@
-package chat.rocket.android.push
+package com.goalify.chat.android.push
 
 import android.annotation.SuppressLint
 import android.app.Notification
@@ -16,12 +16,12 @@ import android.support.v4.app.NotificationManagerCompat
 import android.support.v4.app.RemoteInput
 import android.text.Html
 import android.text.Spanned
-import chat.rocket.android.R
-import chat.rocket.android.main.ui.MainActivity
-import chat.rocket.android.server.domain.GetAccountInteractor
-import chat.rocket.android.server.domain.GetSettingsInteractor
-import chat.rocket.android.server.domain.siteName
-import chat.rocket.android.server.ui.changeServerIntent
+import com.goalify.chat.android.R
+import com.goalify.chat.android.main.ui.MainActivity
+import com.goalify.chat.android.server.domain.GetAccountInteractor
+import com.goalify.chat.android.server.domain.GetSettingsInteractor
+import com.goalify.chat.android.server.domain.siteName
+import com.goalify.chat.android.server.ui.changeServerIntent
 import chat.rocket.common.model.RoomType
 import com.squareup.moshi.Json
 import com.squareup.moshi.Moshi
@@ -378,9 +378,9 @@ data class PushSender(
     val name: String?
 )
 
-const val EXTRA_NOT_ID = "chat.rocket.android.EXTRA_NOT_ID"
-const val EXTRA_HOSTNAME = "chat.rocket.android.EXTRA_HOSTNAME"
-const val EXTRA_PUSH_MESSAGE = "chat.rocket.android.EXTRA_PUSH_MESSAGE"
-const val EXTRA_ROOM_ID = "chat.rocket.android.EXTRA_ROOM_ID"
+const val EXTRA_NOT_ID = "com.goalify.chat.android.EXTRA_NOT_ID"
+const val EXTRA_HOSTNAME = "com.goalify.chat.android.EXTRA_HOSTNAME"
+const val EXTRA_PUSH_MESSAGE = "com.goalify.chat.android.EXTRA_PUSH_MESSAGE"
+const val EXTRA_ROOM_ID = "com.goalify.chat.android.EXTRA_ROOM_ID"
 private const val REPLY_LABEL = "REPLY"
 private const val REMOTE_INPUT_REPLY = "REMOTE_INPUT_REPLY"

@@ -1,9 +1,9 @@
-package chat.rocket.android.chatrooms.di
+package com.goalify.chat.android.chatrooms.di
 
 import android.arch.lifecycle.LifecycleOwner
-import chat.rocket.android.chatrooms.presentation.ChatRoomsView
-import chat.rocket.android.chatrooms.ui.ChatRoomsFragment
-import chat.rocket.android.dagger.scope.PerFragment
+import com.goalify.chat.android.chatrooms.presentation.ChatRoomsView
+import com.goalify.chat.android.chatrooms.ui.ChatRoomsFragment
+import com.goalify.chat.android.dagger.scope.PerFragment
 import dagger.Module
 import dagger.Provides
 

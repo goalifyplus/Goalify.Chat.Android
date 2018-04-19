@@ -1,4 +1,4 @@
-package chat.rocket.android.members.ui
+package com.goalify.chat.android.members.ui
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -9,17 +9,17 @@ import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import chat.rocket.android.R
-import chat.rocket.android.chatroom.ui.ChatRoomActivity
-import chat.rocket.android.helper.EndlessRecyclerViewScrollListener
-import chat.rocket.android.members.adapter.MembersAdapter
-import chat.rocket.android.members.presentation.MembersPresenter
-import chat.rocket.android.members.presentation.MembersView
-import chat.rocket.android.members.viewmodel.MemberViewModel
-import chat.rocket.android.util.extensions.inflate
-import chat.rocket.android.util.extensions.setVisible
-import chat.rocket.android.util.extensions.showToast
-import chat.rocket.android.widget.DividerItemDecoration
+import com.goalify.chat.android.R
+import com.goalify.chat.android.chatroom.ui.ChatRoomActivity
+import com.goalify.chat.android.helper.EndlessRecyclerViewScrollListener
+import com.goalify.chat.android.members.adapter.MembersAdapter
+import com.goalify.chat.android.members.presentation.MembersPresenter
+import com.goalify.chat.android.members.presentation.MembersView
+import com.goalify.chat.android.members.viewmodel.MemberViewModel
+import com.goalify.chat.android.util.extensions.inflate
+import com.goalify.chat.android.util.extensions.setVisible
+import com.goalify.chat.android.util.extensions.showToast
+import com.goalify.chat.android.widget.DividerItemDecoration
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.fragment_members.*
 import javax.inject.Inject

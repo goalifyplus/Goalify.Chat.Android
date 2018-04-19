@@ -1,9 +1,9 @@
-package chat.rocket.android.chatroom.adapter
+package com.goalify.chat.android.chatroom.adapter
 
 import android.text.method.LinkMovementMethod
 import android.view.View
-import chat.rocket.android.chatroom.viewmodel.MessageViewModel
-import chat.rocket.android.widget.emoji.EmojiReactionListener
+import com.goalify.chat.android.chatroom.viewmodel.MessageViewModel
+import com.goalify.chat.android.widget.emoji.EmojiReactionListener
 import kotlinx.android.synthetic.main.avatar.view.*
 import kotlinx.android.synthetic.main.item_message.view.*
 

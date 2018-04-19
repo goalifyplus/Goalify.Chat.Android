@@ -1,4 +1,4 @@
-package chat.rocket.android.widget.emoji
+package com.goalify.chat.android.widget.emoji
 
 import android.app.Dialog
 import android.content.Context
@@ -9,7 +9,7 @@ import android.view.LayoutInflater
 import android.view.Window
 import android.view.WindowManager
 import android.widget.ImageView
-import chat.rocket.android.R
+import com.goalify.chat.android.R
 
 
 class EmojiPickerPopup(context: Context) : Dialog(context) {

@@ -1,9 +1,9 @@
-package chat.rocket.android.widget.autocompletion.ui
+package com.goalify.chat.android.widget.autocompletion.ui
 
 import android.support.v7.widget.RecyclerView
-import chat.rocket.android.widget.autocompletion.model.SuggestionModel
-import chat.rocket.android.widget.autocompletion.strategy.CompletionStrategy
-import chat.rocket.android.widget.autocompletion.strategy.regex.StringMatchingCompletionStrategy
+import com.goalify.chat.android.widget.autocompletion.model.SuggestionModel
+import com.goalify.chat.android.widget.autocompletion.strategy.CompletionStrategy
+import com.goalify.chat.android.widget.autocompletion.strategy.regex.StringMatchingCompletionStrategy
 import java.lang.reflect.Type
 import kotlin.properties.Delegates
 

@@ -1,4 +1,4 @@
-package chat.rocket.android.server.infraestructure
+package com.goalify.chat.android.server.infraestructure
 
 import chat.rocket.common.model.BaseRoom
 import chat.rocket.core.RocketChatClient

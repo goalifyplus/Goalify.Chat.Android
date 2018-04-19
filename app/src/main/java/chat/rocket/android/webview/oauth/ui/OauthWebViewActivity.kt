@@ -1,4 +1,4 @@
-package chat.rocket.android.webview.oauth.ui
+package com.goalify.chat.android.webview.oauth.ui
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -9,9 +9,9 @@ import android.support.v7.app.AppCompatActivity
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.net.toUri
-import chat.rocket.android.R
-import chat.rocket.android.util.extensions.decodeUrl
-import chat.rocket.android.util.extensions.toJsonObject
+import com.goalify.chat.android.R
+import com.goalify.chat.android.util.extensions.decodeUrl
+import com.goalify.chat.android.util.extensions.toJsonObject
 import kotlinx.android.synthetic.main.activity_web_view.*
 import kotlinx.android.synthetic.main.app_bar.*
 import org.json.JSONObject

@@ -1,4 +1,4 @@
-package chat.rocket.android.settings.ui
+package com.goalify.chat.android.settings.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,11 +8,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
-import chat.rocket.android.R
-import chat.rocket.android.main.ui.MainActivity
-import chat.rocket.android.settings.password.ui.PasswordActivity
-import chat.rocket.android.settings.presentation.SettingsView
-import chat.rocket.android.util.extensions.inflate
+import com.goalify.chat.android.R
+import com.goalify.chat.android.main.ui.MainActivity
+import com.goalify.chat.android.settings.password.ui.PasswordActivity
+import com.goalify.chat.android.settings.presentation.SettingsView
+import com.goalify.chat.android.util.extensions.inflate
 import kotlinx.android.synthetic.main.app_bar.*
 import kotlinx.android.synthetic.main.fragment_settings.*
 import kotlin.reflect.KClass

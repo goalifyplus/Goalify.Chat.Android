@@ -1,6 +1,6 @@
-package chat.rocket.android.profile.di
+package com.goalify.chat.android.profile.di
 
-import chat.rocket.android.profile.ui.ProfileFragment
+import com.goalify.chat.android.profile.ui.ProfileFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

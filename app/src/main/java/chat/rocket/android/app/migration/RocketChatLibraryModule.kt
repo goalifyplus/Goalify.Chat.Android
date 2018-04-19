@@ -1,4 +1,4 @@
-package chat.rocket.android.app.migration
+package com.goalify.chat.android.app.migration
 
 import io.realm.annotations.RealmModule
 

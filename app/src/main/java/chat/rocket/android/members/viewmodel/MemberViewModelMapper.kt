@@ -1,8 +1,8 @@
-package chat.rocket.android.members.viewmodel
+package com.goalify.chat.android.members.viewmodel
 
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
-import chat.rocket.android.server.domain.GetSettingsInteractor
-import chat.rocket.android.server.domain.baseUrl
+import com.goalify.chat.android.server.domain.GetCurrentServerInteractor
+import com.goalify.chat.android.server.domain.GetSettingsInteractor
+import com.goalify.chat.android.server.domain.baseUrl
 import chat.rocket.common.model.User
 import chat.rocket.core.model.Value
 import javax.inject.Inject

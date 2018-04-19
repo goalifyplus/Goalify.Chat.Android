@@ -1,7 +1,7 @@
-package chat.rocket.android.members.viewmodel
+package com.goalify.chat.android.members.viewmodel
 
-import chat.rocket.android.helper.UrlHelper
-import chat.rocket.android.server.domain.useRealName
+import com.goalify.chat.android.helper.UrlHelper
+import com.goalify.chat.android.server.domain.useRealName
 import chat.rocket.common.model.User
 import chat.rocket.core.model.Value
 

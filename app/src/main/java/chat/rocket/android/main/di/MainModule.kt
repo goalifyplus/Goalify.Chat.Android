@@ -1,12 +1,12 @@
-package chat.rocket.android.main.di
+package com.goalify.chat.android.main.di
 
 import android.arch.lifecycle.LifecycleOwner
 import android.content.Context
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.dagger.scope.PerActivity
-import chat.rocket.android.main.presentation.MainNavigator
-import chat.rocket.android.main.presentation.MainView
-import chat.rocket.android.main.ui.MainActivity
+import com.goalify.chat.android.core.lifecycle.CancelStrategy
+import com.goalify.chat.android.dagger.scope.PerActivity
+import com.goalify.chat.android.main.presentation.MainNavigator
+import com.goalify.chat.android.main.presentation.MainView
+import com.goalify.chat.android.main.ui.MainActivity
 import dagger.Module
 import dagger.Provides
 import kotlinx.coroutines.experimental.Job

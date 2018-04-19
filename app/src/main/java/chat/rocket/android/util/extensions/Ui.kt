@@ -1,4 +1,4 @@
-package chat.rocket.android.util.extensions
+package com.goalify.chat.android.util.extensions
 
 import android.app.Activity
 import android.content.Context
@@ -13,7 +13,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
-import chat.rocket.android.R
+import com.goalify.chat.android.R
 
 fun View.setVisible(visible: Boolean) {
     visibility = if (visible) {

@@ -1,12 +1,12 @@
-package chat.rocket.android.dagger
+package com.goalify.chat.android.dagger
 
 import android.app.Application
-import chat.rocket.android.app.RocketChatApplication
-import chat.rocket.android.dagger.module.ActivityBuilder
-import chat.rocket.android.dagger.module.AppModule
-import chat.rocket.android.dagger.module.ReceiverBuilder
-import chat.rocket.android.dagger.module.ServiceBuilder
-import chat.rocket.android.push.FirebaseTokenService
+import com.goalify.chat.android.app.RocketChatApplication
+import com.goalify.chat.android.dagger.module.ActivityBuilder
+import com.goalify.chat.android.dagger.module.AppModule
+import com.goalify.chat.android.dagger.module.ReceiverBuilder
+import com.goalify.chat.android.dagger.module.ServiceBuilder
+import com.goalify.chat.android.push.FirebaseTokenService
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.support.AndroidSupportInjectionModule

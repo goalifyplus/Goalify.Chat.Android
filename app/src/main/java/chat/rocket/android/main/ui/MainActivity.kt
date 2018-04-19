@@ -1,4 +1,4 @@
-package chat.rocket.android.main.ui
+package com.goalify.chat.android.main.ui
 
 import android.app.Activity
 import android.app.AlertDialog
@@ -9,18 +9,18 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.Gravity
 import android.view.MenuItem
 import android.view.View
-import chat.rocket.android.BuildConfig
-import chat.rocket.android.R
-import chat.rocket.android.main.adapter.AccountSelector
-import chat.rocket.android.main.adapter.AccountsAdapter
-import chat.rocket.android.main.presentation.MainPresenter
-import chat.rocket.android.main.presentation.MainView
-import chat.rocket.android.main.viewmodel.NavHeaderViewModel
-import chat.rocket.android.server.domain.model.Account
-import chat.rocket.android.util.extensions.fadeIn
-import chat.rocket.android.util.extensions.fadeOut
-import chat.rocket.android.util.extensions.rotateBy
-import chat.rocket.android.util.extensions.showToast
+import com.goalify.chat.android.BuildConfig
+import com.goalify.chat.android.R
+import com.goalify.chat.android.main.adapter.AccountSelector
+import com.goalify.chat.android.main.adapter.AccountsAdapter
+import com.goalify.chat.android.main.presentation.MainPresenter
+import com.goalify.chat.android.main.presentation.MainView
+import com.goalify.chat.android.main.viewmodel.NavHeaderViewModel
+import com.goalify.chat.android.server.domain.model.Account
+import com.goalify.chat.android.util.extensions.fadeIn
+import com.goalify.chat.android.util.extensions.fadeOut
+import com.goalify.chat.android.util.extensions.rotateBy
+import com.goalify.chat.android.util.extensions.showToast
 import com.google.android.gms.gcm.GoogleCloudMessaging
 import com.google.android.gms.iid.InstanceID
 import dagger.android.AndroidInjection

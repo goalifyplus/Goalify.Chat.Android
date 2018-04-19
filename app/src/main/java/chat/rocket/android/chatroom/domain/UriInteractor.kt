@@ -1,8 +1,8 @@
-package chat.rocket.android.chatroom.domain
+package com.goalify.chat.android.chatroom.domain
 
 import android.content.Context
 import android.net.Uri
-import chat.rocket.android.util.extensions.*
+import com.goalify.chat.android.util.extensions.*
 import javax.inject.Inject
 
 

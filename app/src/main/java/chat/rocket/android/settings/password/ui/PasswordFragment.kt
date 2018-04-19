@@ -1,15 +1,15 @@
-package chat.rocket.android.settings.password.ui
+package com.goalify.chat.android.settings.password.ui
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.*
 import android.widget.Toast
-import chat.rocket.android.R
-import chat.rocket.android.settings.password.presentation.PasswordPresenter
-import chat.rocket.android.settings.password.presentation.PasswordView
-import chat.rocket.android.util.extensions.asObservable
-import chat.rocket.android.util.extensions.inflate
-import chat.rocket.android.util.extensions.textContent
+import com.goalify.chat.android.R
+import com.goalify.chat.android.settings.password.presentation.PasswordPresenter
+import com.goalify.chat.android.settings.password.presentation.PasswordView
+import com.goalify.chat.android.util.extensions.asObservable
+import com.goalify.chat.android.util.extensions.inflate
+import com.goalify.chat.android.util.extensions.textContent
 import android.support.v7.view.ActionMode
 import dagger.android.support.AndroidSupportInjection
 import io.reactivex.rxkotlin.Observables
