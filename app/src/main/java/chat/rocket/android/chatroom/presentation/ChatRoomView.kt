@@ -7,7 +7,7 @@ import com.goalify.chat.android.chatroom.viewmodel.suggestion.CommandSuggestionV
 import com.goalify.chat.android.chatroom.viewmodel.suggestion.PeopleSuggestionViewModel
 import com.goalify.chat.android.core.behaviours.LoadingView
 import com.goalify.chat.android.core.behaviours.MessageView
-import chat.rocket.core.internal.realtime.State
+import chat.rocket.core.internal.realtime.socket.model.State
 
 interface ChatRoomView : LoadingView, MessageView {
 
@@ -103,7 +103,9 @@ interface ChatRoomView : LoadingView, MessageView {
     fun showInvalidFileSize(fileSize: Int, maxFileSize: Int)
 
     fun showConnectionState(state: State)
+
     fun populatePeopleSuggestions(members: List<PeopleSuggestionViewModel>)
+
     fun populateRoomSuggestions(chatRooms: List<ChatRoomSuggestionViewModel>)
     /**
      * This user has joined the chat callback.

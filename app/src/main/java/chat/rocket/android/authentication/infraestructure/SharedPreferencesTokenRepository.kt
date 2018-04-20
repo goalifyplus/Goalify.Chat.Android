@@ -1,7 +1,7 @@
 package com.goalify.chat.android.authentication.infraestructure
 
 import android.content.SharedPreferences
-import androidx.content.edit
+import androidx.core.content.edit
 import com.goalify.chat.android.authentication.domain.model.TokenModel
 import com.goalify.chat.android.server.domain.TokenRepository
 import chat.rocket.common.model.Token

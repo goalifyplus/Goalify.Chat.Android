@@ -1,7 +1,7 @@
 package com.goalify.chat.android.server.infraestructure
 
 import android.content.SharedPreferences
-import androidx.content.edit
+import androidx.core.content.edit
 import com.goalify.chat.android.server.domain.AccountsRepository
 import com.goalify.chat.android.server.domain.model.Account
 import com.squareup.moshi.Moshi

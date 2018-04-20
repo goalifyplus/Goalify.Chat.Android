@@ -1,7 +1,7 @@
 package com.goalify.chat.android.members.presentation
 
 import com.goalify.chat.android.chatroom.ui.ChatRoomActivity
-import com.goalify.chat.android.member.ui.newInstance
+import com.goalify.chat.android.members.ui.newInstance
 
 class MembersNavigator(internal val activity: ChatRoomActivity) {
 

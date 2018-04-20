@@ -2,6 +2,7 @@ package com.goalify.chat.android.dagger.module
 
 import com.goalify.chat.android.authentication.di.AuthenticationModule
 import com.goalify.chat.android.authentication.login.di.LoginFragmentProvider
+import com.goalify.chat.android.authentication.registerusername.di.RegisterUsernameFragmentProvider
 import com.goalify.chat.android.authentication.server.di.ServerFragmentProvider
 import com.goalify.chat.android.authentication.signup.di.SignupFragmentProvider
 import com.goalify.chat.android.authentication.twofactor.di.TwoFAFragmentProvider
@@ -30,6 +31,7 @@ abstract class ActivityBuilder {
     @ContributesAndroidInjector(modules = [AuthenticationModule::class,
         ServerFragmentProvider::class,
         LoginFragmentProvider::class,
+        RegisterUsernameFragmentProvider::class,
         SignupFragmentProvider::class,
         TwoFAFragmentProvider::class
     ])

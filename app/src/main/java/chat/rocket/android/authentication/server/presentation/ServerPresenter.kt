@@ -1,12 +1,13 @@
 package com.goalify.chat.android.authentication.server.presentation
 
+import com.goalify.chat.android.authentication.domain.model.LoginDeepLinkInfo
 import com.goalify.chat.android.authentication.presentation.AuthenticationNavigator
+import com.goalify.chat.android.core.behaviours.showMessage
 import com.goalify.chat.android.core.lifecycle.CancelStrategy
-import com.goalify.chat.android.helper.NetworkHelper
-import com.goalify.chat.android.helper.UrlHelper
 import com.goalify.chat.android.server.domain.GetAccountsInteractor
 import com.goalify.chat.android.server.domain.RefreshSettingsInteractor
 import com.goalify.chat.android.server.domain.SaveCurrentServerInteractor
+import com.goalify.chat.android.util.extensions.isValidUrl
 import com.goalify.chat.android.util.extensions.launchUI
 import chat.rocket.common.util.ifNull
 import javax.inject.Inject
@@ -17,8 +18,15 @@ class ServerPresenter @Inject constructor(private val view: ServerView,
                                           private val serverInteractor: SaveCurrentServerInteractor,
                                           private val refreshSettingsInteractor: RefreshSettingsInteractor,
                                           private val getAccountsInteractor: GetAccountsInteractor) {
+
     fun connect(server: String) {
-        if (!UrlHelper.isValidUrl(server)) {
+        connectToServer(server) {
+            navigator.toLogin()
+        }
+    }
+
+    fun connectToServer(server: String, block: () -> Unit) {
+        if (!server.isValidUrl()) {
             view.showInvalidServerUrlMessage()
         } else {
             launchUI(strategy) {
@@ -29,25 +37,23 @@ class ServerPresenter @Inject constructor(private val view: ServerView,
                     return@launchUI
                 }
 
-                if (NetworkHelper.hasInternetAccess()) {
-                    view.showLoading()
-                    try {
-                        refreshSettingsInteractor.refresh(server)
-                        serverInteractor.save(server)
-                        navigator.toLogin()
-                    } catch (ex: Exception) {
-                        ex.message?.let {
-                            view.showMessage(it)
-                        }.ifNull {
-                            view.showGenericErrorMessage()
-                        }
-                    } finally {
-                        view.hideLoading()
-                    }
-                } else {
-                    view.showNoInternetConnection()
+                view.showLoading()
+                try {
+                    refreshSettingsInteractor.refresh(server)
+                    serverInteractor.save(server)
+                    block()
+                } catch (ex: Exception) {
+                    view.showMessage(ex)
+                } finally {
+                    view.hideLoading()
                 }
             }
+        }
+    }
+
+    fun deepLink(deepLinkInfo: LoginDeepLinkInfo) {
+        connectToServer(deepLinkInfo.url) {
+            navigator.toLogin(deepLinkInfo)
         }
     }
 }

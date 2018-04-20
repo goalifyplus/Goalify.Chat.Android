@@ -6,7 +6,7 @@ import android.app.Service
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.SharedPreferences
-import androidx.content.edit
+import androidx.core.content.edit
 import com.goalify.chat.android.BuildConfig
 import com.goalify.chat.android.app.migration.RealmMigration
 import com.goalify.chat.android.app.migration.RocketChatLibraryModule
@@ -18,10 +18,11 @@ import com.goalify.chat.android.app.migration.model.RealmUser
 import com.goalify.chat.android.authentication.domain.model.toToken
 import com.goalify.chat.android.dagger.DaggerAppComponent
 import com.goalify.chat.android.helper.CrashlyticsTree
-import com.goalify.chat.android.helper.UrlHelper
 import com.goalify.chat.android.infrastructure.LocalRepository
 import com.goalify.chat.android.server.domain.*
 import com.goalify.chat.android.server.domain.model.Account
+import com.goalify.chat.android.util.extensions.avatarUrl
+import com.goalify.chat.android.util.extensions.serverLogoUrl
 import com.goalify.chat.android.widget.emoji.EmojiRepository
 import chat.rocket.common.model.Token
 import chat.rocket.core.model.Value
@@ -148,12 +149,12 @@ class RocketChatApplication : Application(), HasActivityInjector, HasServiceInje
 
     private fun migrateServerInfo(url: String, authToken: String, settings: PublicSettings, user: RealmUser) {
         val userId = user._id
-        val avatar = UrlHelper.getAvatarUrl(url, user.username!!)
+        val avatar = url.avatarUrl(user.username!!)
         val icon = settings.favicon()?.let {
-            UrlHelper.getServerLogoUrl(url, it)
+            url.serverLogoUrl(it)
         }
         val logo = settings.wideTile()?.let {
-            UrlHelper.getServerLogoUrl(url, it)
+            url.serverLogoUrl(it)
         }
         val account = Account(url, icon, logo, user.username!!, avatar)
         launch(CommonPool) {

@@ -6,10 +6,11 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import com.goalify.chat.android.R
+import com.goalify.chat.android.authentication.domain.model.LoginDeepLinkInfo
+import com.goalify.chat.android.authentication.domain.model.getLoginDeepLinkInfo
 import com.goalify.chat.android.authentication.presentation.AuthenticationPresenter
 import com.goalify.chat.android.authentication.server.ui.ServerFragment
 import com.goalify.chat.android.util.extensions.addFragment
-import com.goalify.chat.android.util.extensions.launchUI
 import dagger.android.AndroidInjection
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
@@ -30,11 +31,13 @@ class AuthenticationActivity : AppCompatActivity(), HasSupportFragmentInjector {
         setTheme(R.style.AuthenticationTheme)
         super.onCreate(savedInstanceState)
 
+        val deepLinkInfo = intent.getLoginDeepLinkInfo()
         launch(UI + job) {
             val newServer = intent.getBooleanExtra(INTENT_ADD_NEW_SERVER, false)
-            presenter.loadCredentials(newServer) { authenticated ->
+            // if we got authenticadeWithDeepLink information, pass true to newServer also
+            presenter.loadCredentials(newServer || deepLinkInfo != null) { authenticated ->
                 if (!authenticated) {
-                    showServerInput(savedInstanceState)
+                    showServerInput(savedInstanceState, deepLinkInfo)
                 }
             }
         }
@@ -49,9 +52,9 @@ class AuthenticationActivity : AppCompatActivity(), HasSupportFragmentInjector {
         return fragmentDispatchingAndroidInjector
     }
 
-    fun showServerInput(savedInstanceState: Bundle?) {
+    fun showServerInput(savedInstanceState: Bundle?, deepLinkInfo: LoginDeepLinkInfo?) {
         addFragment("ServerFragment", R.id.fragment_container) {
-            ServerFragment.newInstance()
+            ServerFragment.newInstance(deepLinkInfo)
         }
     }
 }

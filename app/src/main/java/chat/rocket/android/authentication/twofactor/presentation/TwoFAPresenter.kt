@@ -2,14 +2,15 @@ package com.goalify.chat.android.authentication.twofactor.presentation
 
 import com.goalify.chat.android.authentication.presentation.AuthenticationNavigator
 import com.goalify.chat.android.core.lifecycle.CancelStrategy
-import com.goalify.chat.android.helper.NetworkHelper
-import com.goalify.chat.android.helper.UrlHelper
 import com.goalify.chat.android.infrastructure.LocalRepository
 import com.goalify.chat.android.server.domain.*
 import com.goalify.chat.android.server.domain.model.Account
 import com.goalify.chat.android.server.infraestructure.RocketChatClientFactory
+import com.goalify.chat.android.util.extensions.avatarUrl
 import com.goalify.chat.android.util.extensions.launchUI
 import com.goalify.chat.android.util.extensions.registerPushToken
+import com.goalify.chat.android.util.extensions.serverLogoUrl
+import com.goalify.chat.android.util.retryIO
 import chat.rocket.common.RocketChatAuthException
 import chat.rocket.common.RocketChatException
 import chat.rocket.common.util.ifNull
@@ -46,32 +47,29 @@ class TwoFAPresenter @Inject constructor(private val view: TwoFAView,
             else -> {
                 launchUI(strategy) {
                     val client = factory.create(server)
-                    if (NetworkHelper.hasInternetAccess()) {
-                        view.showLoading()
-                        try {
-                            // The token is saved via the client TokenProvider
-                            val token =
-                                client.login(usernameOrEmail, password, twoFactorAuthenticationCode)
-                            val me = client.me()
-                            saveAccount(me)
-                            tokenRepository.save(server, token)
-                            registerPushToken()
-                            navigator.toChatList()
-                        } catch (exception: RocketChatException) {
-                            if (exception is RocketChatAuthException) {
-                                view.alertInvalidTwoFactorAuthenticationCode()
-                            } else {
-                                exception.message?.let {
-                                    view.showMessage(it)
-                                }.ifNull {
-                                    view.showGenericErrorMessage()
-                                }
-                            }
-                        } finally {
-                            view.hideLoading()
+                    view.showLoading()
+                    try {
+                        // The token is saved via the client TokenProvider
+                        val token = retryIO("login") {
+                            client.login(usernameOrEmail, password, twoFactorAuthenticationCode)
                         }
-                    } else {
-                        view.showNoInternetConnection()
+                        val me = retryIO("me") { client.me() }
+                        saveAccount(me)
+                        tokenRepository.save(server, token)
+                        registerPushToken()
+                        navigator.toChatList()
+                    } catch (exception: RocketChatException) {
+                        if (exception is RocketChatAuthException) {
+                            view.alertInvalidTwoFactorAuthenticationCode()
+                        } else {
+                            exception.message?.let {
+                                view.showMessage(it)
+                            }.ifNull {
+                                view.showGenericErrorMessage()
+                            }
+                        }
+                    } finally {
+                        view.hideLoading()
                     }
                 }
             }
@@ -90,12 +88,12 @@ class TwoFAPresenter @Inject constructor(private val view: TwoFAView,
 
     private suspend fun saveAccount(me: Myself) {
         val icon = settings.favicon()?.let {
-            UrlHelper.getServerLogoUrl(currentServer, it)
+            currentServer.serverLogoUrl(it)
         }
         val logo = settings.wideTile()?.let {
-            UrlHelper.getServerLogoUrl(currentServer, it)
+            currentServer.serverLogoUrl(it)
         }
-        val thumb = UrlHelper.getAvatarUrl(currentServer, me.username!!)
+        val thumb = currentServer.avatarUrl(me.username!!)
         val account = Account(currentServer, icon, logo, me.username!!, thumb)
         saveAccountInteractor.save(account)
     }

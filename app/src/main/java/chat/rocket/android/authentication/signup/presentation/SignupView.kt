@@ -1,10 +1,9 @@
 package com.goalify.chat.android.authentication.signup.presentation
 
-import com.goalify.chat.android.core.behaviours.InternetView
 import com.goalify.chat.android.core.behaviours.LoadingView
 import com.goalify.chat.android.core.behaviours.MessageView
 
-interface SignupView : LoadingView, MessageView, InternetView {
+interface SignupView : LoadingView, MessageView {
 
     /**
      * Alerts the user about a blank name.

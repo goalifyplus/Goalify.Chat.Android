@@ -1,5 +1,7 @@
 package com.goalify.chat.android.dagger.module
 
+import com.goalify.chat.android.chatroom.di.MessageServiceProvider
+import com.goalify.chat.android.chatroom.service.MessageService
 import com.goalify.chat.android.push.FirebaseTokenService
 import com.goalify.chat.android.push.GcmListenerService
 import com.goalify.chat.android.push.di.FirebaseTokenServiceProvider
@@ -14,4 +16,7 @@ import dagger.android.ContributesAndroidInjector
 
     @ContributesAndroidInjector(modules = [GcmListenerServiceProvider::class])
     abstract fun bindGcmListenerService(): GcmListenerService
+
+    @ContributesAndroidInjector(modules = [MessageServiceProvider::class])
+    abstract fun bindMessageService(): MessageService
 }

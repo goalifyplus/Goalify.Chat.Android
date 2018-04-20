@@ -1,5 +1,6 @@
 package com.goalify.chat.android.chatroom.adapter
 
+import android.graphics.Color
 import android.text.method.LinkMovementMethod
 import android.view.View
 import com.goalify.chat.android.chatroom.viewmodel.MessageViewModel
@@ -29,6 +30,9 @@ class MessageViewHolder(
             text_sender.text = data.senderName
             text_content.text = data.content
             image_avatar.setImageURI(data.avatar)
+            text_content.setTextColor(
+                if (data.isTemporary) Color.GRAY else Color.BLACK
+            )
         }
     }
 }

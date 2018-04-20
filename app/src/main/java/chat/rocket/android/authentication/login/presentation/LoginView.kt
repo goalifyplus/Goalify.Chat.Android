@@ -1,11 +1,10 @@
 package com.goalify.chat.android.authentication.login.presentation
 
 import com.goalify.chat.android.authentication.server.presentation.VersionCheckView
-import com.goalify.chat.android.core.behaviours.InternetView
 import com.goalify.chat.android.core.behaviours.LoadingView
 import com.goalify.chat.android.core.behaviours.MessageView
 
-interface LoginView : LoadingView, MessageView, InternetView, VersionCheckView {
+interface LoginView : LoadingView, MessageView, VersionCheckView {
 
     /**
      * Shows the form view (i.e the username/email and password fields) if it is enabled by the server settings.
@@ -187,9 +186,4 @@ interface LoginView : LoadingView, MessageView, InternetView, VersionCheckView {
      * Alerts the user about a wrong inputted password.
      */
     fun alertWrongPassword()
-
-    /**
-     * Alerts the user about the need of creating an username using the web app when creating an user through OAuth.
-     */
-    fun alertRequiresUsername()
 }

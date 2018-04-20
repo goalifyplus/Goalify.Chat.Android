@@ -1,4 +1,4 @@
-package com.goalify.chat.android.member.ui
+package com.goalify.chat.android.members.ui
 
 import android.os.Bundle
 import android.support.design.widget.BottomSheetDialogFragment

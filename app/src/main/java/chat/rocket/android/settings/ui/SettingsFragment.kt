@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import com.goalify.chat.android.R
 import com.goalify.chat.android.main.ui.MainActivity
+import com.goalify.chat.android.settings.about.ui.AboutActivity
 import com.goalify.chat.android.settings.password.ui.PasswordActivity
 import com.goalify.chat.android.settings.presentation.SettingsView
 import com.goalify.chat.android.util.extensions.inflate
@@ -33,8 +34,10 @@ class SettingsFragment: Fragment(), SettingsView, AdapterView.OnItemClickListene
 
     override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
         when (parent?.getItemAtPosition(position).toString()) {
-            "Change Password" -> {
+            resources.getString(R.string.title_password) -> {
                 startNewActivity(PasswordActivity::class)
+            }resources.getString(R.string.title_about) -> {
+                startNewActivity(AboutActivity::class)
             }
         }
     }

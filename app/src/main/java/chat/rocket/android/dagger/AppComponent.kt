@@ -2,6 +2,7 @@ package com.goalify.chat.android.dagger
 
 import android.app.Application
 import com.goalify.chat.android.app.RocketChatApplication
+import com.goalify.chat.android.chatroom.service.MessageService
 import com.goalify.chat.android.dagger.module.ActivityBuilder
 import com.goalify.chat.android.dagger.module.AppModule
 import com.goalify.chat.android.dagger.module.ReceiverBuilder
@@ -28,6 +29,8 @@ interface AppComponent {
     fun inject(app: RocketChatApplication)
 
     fun inject(service: FirebaseTokenService)
+
+    fun inject(service: MessageService)
 
     /*@Component.Builder
     abstract class Builder : AndroidInjector.Builder<RocketChatApplication>()*/

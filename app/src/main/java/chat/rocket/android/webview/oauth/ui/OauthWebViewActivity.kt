@@ -8,7 +8,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import androidx.net.toUri
+import androidx.core.net.toUri
 import com.goalify.chat.android.R
 import com.goalify.chat.android.util.extensions.decodeUrl
 import com.goalify.chat.android.util.extensions.toJsonObject

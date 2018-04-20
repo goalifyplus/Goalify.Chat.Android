@@ -6,6 +6,7 @@ import com.goalify.chat.android.members.viewmodel.MemberViewModelMapper
 import com.goalify.chat.android.server.domain.GetCurrentServerInteractor
 import com.goalify.chat.android.server.infraestructure.RocketChatClientFactory
 import com.goalify.chat.android.util.extensions.launchUI
+import com.goalify.chat.android.util.retryIO
 import chat.rocket.common.RocketChatException
 import chat.rocket.common.model.roomTypeOf
 import chat.rocket.common.util.ifNull
@@ -26,7 +27,9 @@ class MembersPresenter @Inject constructor(private val view: MembersView,
             try {
                 view.showLoading()
 
-                val members = client.getMembers(chatRoomId, roomTypeOf(chatRoomType), offset, 60)
+                val members = retryIO("getMembers($chatRoomId, $chatRoomType, $offset)") {
+                    client.getMembers(chatRoomId, roomTypeOf(chatRoomType), offset, 60)
+                }
                 val memberViewModels = mapper.mapToViewModelList(members.result)
                 view.showMembers(memberViewModels, members.total)
             } catch (ex: RocketChatException) {

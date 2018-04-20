@@ -1,10 +1,11 @@
 package com.goalify.chat.android.profile.presentation
 
 import com.goalify.chat.android.core.lifecycle.CancelStrategy
-import com.goalify.chat.android.helper.UrlHelper
 import com.goalify.chat.android.server.domain.GetCurrentServerInteractor
 import com.goalify.chat.android.server.infraestructure.RocketChatClientFactory
+import com.goalify.chat.android.util.extensions.avatarUrl
 import com.goalify.chat.android.util.extensions.launchUI
+import com.goalify.chat.android.util.retryIO
 import chat.rocket.common.RocketChatException
 import chat.rocket.common.util.ifNull
 import chat.rocket.core.RocketChatClient
@@ -25,9 +26,9 @@ class ProfilePresenter @Inject constructor(private val view: ProfileView,
         launchUI(strategy) {
             view.showLoading()
             try {
-                val myself = client.me()
-                myselfId = myself.id
-                val avatarUrl = UrlHelper.getAvatarUrl(serverUrl, myself.username!!)
+                val myself = retryIO("me") { client.me() }
+                myselfId = myself.id!!
+                val avatarUrl = serverUrl.avatarUrl(myself.username!!)
                 view.showProfile(
                         avatarUrl,
                         myself.name ?: "",
@@ -51,9 +52,9 @@ class ProfilePresenter @Inject constructor(private val view: ProfileView,
             view.showLoading()
             try {
                 if(avatarUrl!="") {
-                    client.setAvatar(avatarUrl)
+                    retryIO { client.setAvatar(avatarUrl) }
                 }
-                val user = client.updateProfile(myselfId, email, name, username)
+                val user = retryIO { client.updateProfile(myselfId, email, name, username) }
                 view.showProfileUpdateSuccessfullyMessage()
                 loadUserProfile()
             } catch (exception: RocketChatException) {
