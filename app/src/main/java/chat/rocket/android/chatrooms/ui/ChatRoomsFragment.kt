@@ -106,7 +106,7 @@ class ChatRoomsFragment : Fragment(), ChatRoomsView {
             R.id.action_sort -> {
                 val dialogLayout = layoutInflater.inflate(R.layout.chatroom_sort_dialog, null)
                 val sortType = SharedPreferenceHelper.getInt(Constants.CHATROOM_SORT_TYPE_KEY, ChatRoomsSortOrder.ACTIVITY)
-                val groupByType = SharedPreferenceHelper.getBoolean(Constants.CHATROOM_GROUP_BY_TYPE_KEY, false)
+                val groupByType = SharedPreferenceHelper.getBoolean(Constants.CHATROOM_GROUP_BY_TYPE_KEY, true)
 
                 val radioGroup = dialogLayout.findViewById<RadioGroup>(R.id.radio_group_sort)
                 val groupByTypeCheckBox = dialogLayout.findViewById<CheckBox>(R.id.checkbox_group_by_type)
@@ -253,7 +253,7 @@ class ChatRoomsFragment : Fragment(), ChatRoomsView {
 
     private fun setSections() {
         //Don't add section if not grouping by RoomType
-        if (!SharedPreferenceHelper.getBoolean(Constants.CHATROOM_GROUP_BY_TYPE_KEY, false)) {
+        if (!SharedPreferenceHelper.getBoolean(Constants.CHATROOM_GROUP_BY_TYPE_KEY, true)) {
             sectionedAdapter?.clearSections()
             return
         }

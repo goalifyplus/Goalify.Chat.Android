@@ -182,7 +182,7 @@ class ChatRoomsPresenter @Inject constructor(private val view: ChatRoomsView,
 
     private fun sortRooms(chatRooms: List<ChatRoom>): List<ChatRoom> {
         val sortType = SharedPreferenceHelper.getInt(Constants.CHATROOM_SORT_TYPE_KEY, ChatRoomsSortOrder.ACTIVITY)
-        val groupByType = SharedPreferenceHelper.getBoolean(Constants.CHATROOM_GROUP_BY_TYPE_KEY, false)
+        val groupByType = SharedPreferenceHelper.getBoolean(Constants.CHATROOM_GROUP_BY_TYPE_KEY, true)
 
         val openChatRooms = getOpenChatRooms(chatRooms)
 
@@ -198,7 +198,7 @@ class ChatRoomsPresenter @Inject constructor(private val view: ChatRoomsView,
                     true -> openChatRooms.sortedWith(compareBy(ChatRoom::type).thenByDescending { it.lastMessage?.timestamp })
                     false -> openChatRooms.sortedByDescending { chatRoom ->
                         chatRoom.lastMessage?.timestamp
-                    }
+                    }                    
                 }
             }
             else -> {
