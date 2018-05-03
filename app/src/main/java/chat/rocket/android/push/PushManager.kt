@@ -8,6 +8,7 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.media.RingtoneManager
+import android.media.AudioAttributes
 import android.os.Build
 import android.os.Bundle
 import android.os.Parcel
@@ -18,6 +19,7 @@ import android.support.v4.app.NotificationManagerCompat
 import android.support.v4.app.RemoteInput
 import android.text.Html
 import android.text.Spanned
+import android.net.Uri
 import com.goalify.chat.android.R
 import com.goalify.chat.android.main.ui.MainActivity
 import com.goalify.chat.android.server.domain.GetAccountInteractor
@@ -236,11 +238,17 @@ class PushManager @Inject constructor(
                     .setMessageNotification()
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                val audioAttr = AudioAttributes.Builder()
+                    .setUsage(AudioAttributes.USAGE_NOTIFICATION_RINGTONE)
+                    .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                    .build()                
+
                 val channel = NotificationChannel(host, host, NotificationManager.IMPORTANCE_HIGH)
                 channel.lockscreenVisibility = Notification.VISIBILITY_PUBLIC
-                channel.enableLights(false)
+                channel.enableLights(true)
                 channel.enableVibration(true)
                 channel.setShowBadge(true)
+                channel.setSound(Uri.parse("android.resource://" + context.packageName + "/" + R.raw.notification), audioAttr)
                 manager.createNotificationChannel(channel)
             }
 
@@ -333,17 +341,16 @@ class PushManager @Inject constructor(
     }
 
     private fun NotificationCompat.Builder.setMessageNotification(): NotificationCompat.Builder {
-        val alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
         val res = context.resources
         val smallIcon = res.getIdentifier(
-            "ic_stat_name", "drawable", context.packageName)
+            "ic_stat_name", "drawable", context.packageName)       
         with(this, {
             setAutoCancel(true)
             setShowWhen(true)
             color = context.resources.getColor(R.color.notification_color)
             setDefaults(Notification.DEFAULT_ALL)
             setSmallIcon(smallIcon)
-            setSound(alarmSound)
+            setSound(Uri.parse("android.resource://" + context.packageName + "/" + R.raw.notification))
         })
         return this
     }
