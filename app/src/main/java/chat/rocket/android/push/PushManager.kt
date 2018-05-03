@@ -348,7 +348,7 @@ class PushManager @Inject constructor(
             setAutoCancel(true)
             setShowWhen(true)
             color = context.resources.getColor(R.color.notification_color)
-            setDefaults(Notification.DEFAULT_ALL)
+            // setDefaults(Notification.DEFAULT_ALL)
             setSmallIcon(smallIcon)
             setSound(Uri.parse("android.resource://" + context.packageName + "/" + R.raw.notification))
         })
