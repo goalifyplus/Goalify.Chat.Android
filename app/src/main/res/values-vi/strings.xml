@@ -1,0 +1,193 @@
+<resources>
+    <string name="app_name" translatable="false">Goalify Chat</string>
+
+    <!-- Titles -->
+    <string name="title_sign_in_your_server">Đăng nhập</string>
+    <string name="title_log_in">Đăng nhập</string>
+    <string name="title_register_username">Đăng ký tên đăng nhập</string>
+    <string name="title_sign_up">Đăng ký</string>
+    <string name="title_authentication">Xác thực</string>
+    <string name="title_legal_terms">" Điều khoản pháp lý"</string>
+    <string name="title_chats">Trò chuyện</string>
+    <string name="title_profile">Hồ sơ</string>
+    <string name="title_members">Thành viên (%d)</string>
+    <string name="title_settings">Cài đặt</string>
+    <string name="title_password">Thay đổi mật khẩu</string>
+    <string name="title_update_profile">Cập nhật hồ sơ</string>
+    <string name="title_about">Về chúng tôi</string>
+
+    <!-- Actions -->
+    <string name="action_connect">Kết nối</string>
+    <string name="action_use_this_username">Sử dụng tên đăng nhập này</string>
+    <string name="action_login_or_sign_up">Nhấn để đăng nhập hoặc đăng ký tài khoản</string>
+    <string name="action_terms_of_service">" Điều khoản dịch vụ"</string>
+    <string name="action_privacy_policy">Chính sách bảo mật</string>
+    <string name="action_search">Tìm kiếm</string>
+    <string name="action_update">Cập nhật</string>
+    <string name="action_settings">Cài đặt</string>
+    <string name="action_logout">Đăng xuất</string>
+    <string name="action_files">Tập tin</string>
+    <string name="action_confirm_password">Xác nhận thay đổi mật khẩu</string>
+    <string name="action_join_chat">Tham gia trò chuyện</string>
+    <string name="action_add_account">Thêm tài khoản</string>
+    <string name="action_online">Trực tuyến</string>
+    <string name="action_away">Vắng mặt</string>
+    <string name="action_busy">Bận</string>
+    <string name="action_invisible">Vô hình</string>
+    <string name="action_done">Xong</string>
+
+    <!-- Settings List -->
+    <string-array name="settings_actions">
+        <item name="item_password">Thay đổi mật khẩu</item>
+        <item name="item_change_language">Ngôn ngữ</item>
+        <!-- <item name="item_password">About</item> -->
+    </string-array>
+
+    <!-- Regular information messages -->
+    <string name="msg_generic_error">"Rất tiếc, đã xảy ra lỗi, vui lòng thử lại"</string>
+    <string name="msg_no_data_to_display">"Không có dữ liệu để hiển thị"</string>
+    <string name="msg_profile_update_successfully">" Đã cập nhật thành công hồ sơ"</string>
+    <string name="msg_username">Tên đăng nhập</string>
+    <string name="msg_username_or_email">Tên đăng nhập hoặc email</string>
+    <string name="msg_password">Mật khẩu</string>
+    <string name="msg_name">Tên</string>
+    <string name="msg_email">Email</string>
+    <string name="msg_avatar_url">Ảnh đại diện URL</string>
+    <string name="msg_or_continue_using_social_accounts">Hoặc tiếp tục sử dụng tài khoản mạng xã hội</string>
+    <string name="msg_new_user">Người dùng mới? %1$s</string>
+    <string name="msg_new_user_agreement">Bằng cách tiếp tục, bạn đồng ý với\n%1$s và %2$s</string>
+    <string name="msg_2fa_code">Mã bảo mật 2 lớp</string>
+    <string name="msg_more_than_ninety_nine_unread_messages" translatable="false">99+</string>
+    <string name="msg_yesterday">Hôm qua</string>
+    <string name="msg_message">Tin nhắn</string>
+    <string name="msg_this_room_is_read_only">Kênh chỉ đọc</string>
+    <string name="msg_invalid_2fa_code">Mã bảo mật 2 lớp không hợp lệ</string>
+    <string name="msg_invalid_file">Tập tin không hợp lệ</string>
+    <string name="msg_invalid_server_url">Server URL không hợp lệ</string>
+    <string name="msg_content_description_log_in_using_facebook">Đăng nhập bằng Facebook</string>
+    <string name="msg_content_description_log_in_using_github">Đăng nhập bằng Github</string>
+    <string name="msg_content_description_log_in_using_google">Đăng nhập bằng Google</string>
+    <string name="msg_content_description_log_in_using_linkedin">Đăng nhập bằng Linkedin</string>
+    <string name="msg_content_description_log_in_using_meteor">Đăng nhập bằng Meteor</string>
+    <string name="msg_content_description_log_in_using_twitter">Đăng nhập bằng Twitter</string>
+    <string name="msg_content_description_log_in_using_gitlab">Đăng nhập bằng Gitlab</string>
+    <string name="msg_content_description_send_message">Gửi tin nhắn</string>
+    <string name="msg_content_description_show_attachment_options">Hiển thị tuỳ chọn tập tin đính kèm</string>
+    <string name="msg_you">Bạn</string>
+    <string name="msg_unknown">Không xác định</string>
+    <string name="msg_email_address">Địa chỉ E-mail</string>
+    <string name="msg_utc_offset">Giá trị UTC</string>
+    <string name="msg_new_password">Nhập mật khẩu mới</string>
+    <string name="msg_confirm_password">Xác nhận mật khẩu mới</string>
+    <string name="msg_unread_messages">Tin nhắn chưa đọc</string>
+    <string name="msg_preview_video">Video</string>
+    <string name="msg_preview_audio">Âm thanh</string>
+    <string name="msg_preview_photo">Hình ảnh</string>
+    <string name="msg_no_messages_yet">Chưa nhận tin nhắn nào</string>
+    <string name="msg_version">Phiên bản</string>
+    <string name="msg_build">Xây dựng</string>
+    <string name="msg_ok">OK</string>
+    <string name="msg_ver_not_recommended">
+        Có vẻ phiên bản server của bạn thấp hơn phiên bản được đề xuất %1$s.\nBạn vẫn có thể đăng nhập tuy nhiên sẽ gặp phải một số vấn để không lường trước được.</string>
+    <string name="msg_ver_not_minimum">
+        Có vẻ như phiên bản máy chủ của bạn thấp hơn phiên bản yêu cầu tối thiểu %1$s.\nVui lòng cập nhật để có thể đăng nhập!
+    </string>
+
+    <!-- System messages -->
+    <string name="message_room_name_changed">Tên kênh được đổi thành: %1$s by %2$s</string>
+    <string name="message_user_added_by">Người dùng %1$s được thêm bởi %2$s</string>
+    <string name="message_user_removed_by">Người dùng %1$s bị xoá bởi %2$s</string>
+    <string name="message_user_left">Đã rời khỏi kênh.</string>
+    <string name="message_user_joined_channel">Đã tham gia kênh.</string>
+    <string name="message_welcome">Chào mừng %s</string>
+    <string name="message_removed">Tin nhắn bị xoá</string>
+    <string name="message_pinned">Ghim tin nhắn:</string>
+
+    <!-- Message actions -->
+    <string name="action_msg_reply">Đáp lại</string>
+    <string name="action_msg_edit">Chỉnh sửa</string>
+    <string name="action_msg_copy">Sao chép</string>
+    <string name="action_msg_quote">Trích dẫn</string>
+    <string name="action_msg_delete">Xoá</string>
+    <string name="action_msg_pin">Ghim tin nhắn</string>
+    <string name="action_msg_unpin">Bỏ ghim tin nhắn</string>
+    <string name="action_msg_star">Star message</string>
+    <string name="action_msg_share">Chia sẻ</string>
+    <string name="action_title_editing">Chỉnh sửa tin nhắn</string>
+    <string name="action_msg_add_reaction">Thêm biểu cảm</string>
+
+    <!-- Permission messages -->
+    <string name="permission_editing_not_allowed">Không có quyền chỉnh sửa</string>
+    <string name="permission_deleting_not_allowed">Không có quyền xoá</string>
+    <string name="permission_pinning_not_allowed">Không có quyền ghim</string>
+
+    <!-- Members List -->
+    <string name="title_members_list">Danh sách thành viên</string>
+
+    <!-- Pinned Messages -->
+    <string name="title_pinned_messages">Ghim tin nhắn</string>
+    <string name="no_pinned_messages">Không có tin nhắn nào được ghim</string>
+    <string name="no_pinned_description">Tất cả tin nhắn được ghim\nở đây.</string>
+
+    <!-- Upload Messages -->
+    <string name="max_file_size_exceeded">Kích thước tập tin %1$d bytes đã vượt kích thước cho phép tối đa %2$d bytes</string>
+
+    <!-- Socket status -->
+    <string name="status_connected">Đã kết nối</string>
+    <string name="status_disconnected">Đã mất kết nối</string>
+    <string name="status_connecting">Đang kết nối</string>
+    <string name="status_authenticating">Đang xác thực</string>
+    <string name="status_disconnecting">Đang mất kết nối</string>
+    <string name="status_waiting">Đang kết nối trong %d giây</string>
+
+    <!--Suggestions-->
+    <string name="suggest_all_description">Thông báo với mọi người trong kênh này</string>
+    <string name="suggest_here_description">Thông báo với những người trực tuyến trong kênh này</string>
+
+    <!-- Slash Commands -->
+    <string name="Slash_Gimme_Description">Hiển thị ༼ つ ◕_◕ ༽つ trước tin nhắn của bạn</string>
+    <string name="Slash_LennyFace_Description">Hiển thị ( ͡° ͜ʖ ͡°) sau tin nhắn của bạn</string>
+    <string name="Slash_Shrug_Description">Hiển thị ¯\_(ツ)_/¯ sau tin nhắn của bạn</string>
+    <string name="Slash_Tableflip_Description">Hiển thị (╯°□°）╯︵ ┻━┻</string>
+    <string name="Slash_TableUnflip_Description">Hiển thị ┬─┬ ノ( ゜-゜ノ)</string>
+    <string name="Create_A_New_Channel">Tạo mới kênh</string>
+    <string name="Show_the_keyboard_shortcut_list">Show the keyboard shortcut list</string>
+    <string name="Invite_user_to_join_channel_all_from">Mời tất cả người dùng từ [#channel] tham gia kênh này</string>
+    <string name="Invite_user_to_join_channel_all_to">Mời tất cả người dùng từ kênh này tham gia vào [#channel]</string>
+    <string name="Archive">Archive</string>
+    <string name="Remove_someone_from_room">Xoá một người nào đó trong kênh này</string>
+    <string name="Leave_the_current_channel">Ra khỏi kênh này</string>
+    <string name="Displays_action_text">Displays action text</string>
+    <string name="Direct_message_someone">Direct message someone</string>
+    <string name="Mute_someone_in_room">Mute someone in the room</string>
+    <string name="Unmute_someone_in_room">Unmute someone in the room</string>
+    <string name="Invite_user_to_join_channel">Invite one user tham gia kênh này</string>
+    <string name="Unarchive">Unarchive</string>
+    <string name="Join_the_given_channel">Join the given channel</string>
+    <string name="Guggy_Command_Description">Generates a gif based upon the provided text</string>
+    <string name="Slash_Topic_Description">Set topic</string>
+
+    <!-- Emoji message-->
+    <string name="msg_no_recent_emoji">Không có emoji nào gần đây</string>
+
+    <!-- Sorting and grouping-->
+    <string name="menu_chatroom_sort">Sắp xếp</string>
+    <string name="dialog_sort_title">Sắp xếp bởi</string>
+    <string name="dialog_sort_by_alphabet">Bảng chữ cái</string>
+    <string name="dialog_sort_by_activity">Tương tác</string>
+    <string name="dialog_group_by_type">Phân loại theo nhóm</string>
+    <string name="dialog_group_favourites">Phân loại theo mục yêu thích</string>
+    <string name="chatroom_header">Tiêu đề</string>
+
+    <!--ChatRooms Headers-->
+    <string name="header_channel">Kênh</string>
+    <string name="header_private_groups">Kênh riêng tư</string>
+    <string name="header_direct_messages">Kênh tin nhắn trực tiếp</string>
+    <string name="header_live_chats">Live Chats</string>
+    <string name="header_unknown">Không xác định</string>
+
+    <!--Notifications-->
+    <string name="notif_action_reply_hint">Hồi đáp</string>
+    <string name="notif_error_sending">Hồi đáp thất bại. Vui lòng thử lại.</string>
+    <string name="notif_success_sending">Tin nhắn đã gửi đến %1$s!</string>
+</resources>

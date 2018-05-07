@@ -34,10 +34,12 @@
     <string name="action_away">Away</string>
     <string name="action_busy">Busy</string>
     <string name="action_invisible">Invisible</string>
+    <string name="action_done">Done</string>
 
     <!-- Settings List -->
     <string-array name="settings_actions">
         <item name="item_password">Change Password</item>
+        <item name="item_change_language">Language</item>
         <!-- <item name="item_password">About</item> -->
     </string-array>
 
