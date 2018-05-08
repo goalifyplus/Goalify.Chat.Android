@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Goalify Chat</string>
+    <!-- <string name="app_name" translatable="false">Goalify Chat</string> -->
 
     <!-- Titles -->
     <string name="title_sign_in_your_server">Đăng nhập</string>
@@ -39,7 +39,7 @@
     <!-- Settings List -->
     <string-array name="settings_actions">
         <item name="item_password">Thay đổi mật khẩu</item>
-        <item name="item_change_language">Ngôn ngữ</item>
+        <!-- <item name="item_change_language">Ngôn ngữ</item> -->
         <!-- <item name="item_password">About</item> -->
     </string-array>
 
@@ -57,7 +57,7 @@
     <string name="msg_new_user">Người dùng mới? %1$s</string>
     <string name="msg_new_user_agreement">Bằng cách tiếp tục, bạn đồng ý với\n%1$s và %2$s</string>
     <string name="msg_2fa_code">Mã bảo mật 2 lớp</string>
-    <string name="msg_more_than_ninety_nine_unread_messages" translatable="false">99+</string>
+    <!-- <string name="msg_more_than_ninety_nine_unread_messages" translatable="false">99+</string> -->
     <string name="msg_yesterday">Hôm qua</string>
     <string name="msg_message">Tin nhắn</string>
     <string name="msg_this_room_is_read_only">Kênh chỉ đọc</string>

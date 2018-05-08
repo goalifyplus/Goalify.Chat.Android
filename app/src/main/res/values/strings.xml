@@ -39,7 +39,7 @@
     <!-- Settings List -->
     <string-array name="settings_actions">
         <item name="item_password">Change Password</item>
-        <item name="item_change_language">Language</item>
+        <!-- <item name="item_change_language">Language</item> -->
         <!-- <item name="item_password">About</item> -->
     </string-array>
 

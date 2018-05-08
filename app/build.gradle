@@ -13,8 +13,8 @@ android {
         applicationId "com.goalify.chat.android"
         minSdkVersion 21
         targetSdkVersion versions.targetSdk
-        versionCode 2
-        versionName "2.0.0"
+        versionCode 5
+        versionName "1.0.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
