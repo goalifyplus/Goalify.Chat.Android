@@ -7,6 +7,8 @@ import com.goalify.chat.android.server.infraestructure.RocketChatClientFactory
 import com.goalify.chat.android.util.VersionInfo
 import com.goalify.chat.android.util.extensions.launchUI
 import com.goalify.chat.android.util.retryIO
+import chat.rocket.common.RocketChatInvalidProtocolException
+import chat.rocket.common.model.ServerInfo
 import chat.rocket.core.RocketChatClient
 import chat.rocket.core.internal.rest.serverInfo
 import kotlinx.coroutines.experimental.Deferred
@@ -18,17 +20,24 @@ abstract class CheckServerPresenter constructor(private val strategy: CancelStra
                                                 private val factory: RocketChatClientFactory,
                                                 private val view: VersionCheckView) {
     private lateinit var currentServer: String
-    private val client: RocketChatClient by lazy {
-        factory.create(currentServer)
-    }
+    private lateinit var client: RocketChatClient
 
     internal fun checkServerInfo(serverUrl: String): Job {
         return launchUI(strategy) {
             try {
-                val version = checkServerVersion(serverUrl).await()
+                currentServer = serverUrl
+                client = factory.create(currentServer)
+                val serverInfo = retryIO(description = "serverInfo", times = 5) {
+                    client.serverInfo()
+                }
+                if (serverInfo.redirected) {
+                    view.updateServerUrl(serverInfo.url)
+                }
+                val version = checkServerVersion(serverInfo)
                 when (version) {
                     is Version.VersionOk -> {
                         Timber.i("Your version is nice! (Requires: 0.62.0, Yours: ${version.version})")
+                        view.versionOk()
                     }
                     is Version.RecommendedVersionWarning -> {
                         Timber.i("Your server ${version.version} is bellow recommended version ${BuildConfig.RECOMMENDED_SERVER_VERSION}")
@@ -41,27 +50,31 @@ abstract class CheckServerPresenter constructor(private val strategy: CancelStra
                 }
             } catch (ex: Exception) {
                 Timber.d(ex, "Error getting server info")
+                when(ex) {
+                    is RocketChatInvalidProtocolException -> {
+                        view.errorInvalidProtocol()
+                    }
+                    else -> {
+                        view.errorCheckingServerVersion()
+                    }
+                }
             }
         }
     }
 
-    internal fun checkServerVersion(serverUrl: String): Deferred<Version> {
-        currentServer = serverUrl
-        return async {
-            val serverInfo = retryIO(description = "serverInfo", times = 5) { client.serverInfo() }
-            val thisServerVersion = serverInfo.version
-            val isRequiredVersion = isRequiredServerVersion(thisServerVersion)
-            val isRecommendedVersion = isRecommendedServerVersion(thisServerVersion)
-            if (isRequiredVersion) {
-                if (isRecommendedVersion) {
-                    Timber.i("Your version is nice! (Requires: 0.62.0, Yours: $thisServerVersion)")
-                    return@async Version.VersionOk(thisServerVersion)
-                } else {
-                    return@async Version.RecommendedVersionWarning(thisServerVersion)
-                }
+    private fun checkServerVersion(serverInfo: ServerInfo): Version {
+        val thisServerVersion = serverInfo.version
+        val isRequiredVersion = isRequiredServerVersion(thisServerVersion)
+        val isRecommendedVersion = isRecommendedServerVersion(thisServerVersion)
+        return if (isRequiredVersion) {
+            if (isRecommendedVersion) {
+                Timber.i("Your version is nice! (Requires: 0.62.0, Yours: $thisServerVersion)")
+                Version.VersionOk(thisServerVersion)
             } else {
-                return@async Version.OutOfDateError(thisServerVersion)
+                Version.RecommendedVersionWarning(thisServerVersion)
             }
+        } else {
+            Version.OutOfDateError(thisServerVersion)
         }
     }
 

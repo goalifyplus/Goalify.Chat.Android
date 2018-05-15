@@ -7,9 +7,10 @@ import com.goalify.chat.android.core.lifecycle.CancelStrategy
 import com.goalify.chat.android.server.domain.GetAccountsInteractor
 import com.goalify.chat.android.server.domain.RefreshSettingsInteractor
 import com.goalify.chat.android.server.domain.SaveCurrentServerInteractor
+import com.goalify.chat.android.server.infraestructure.RocketChatClientFactory
+import com.goalify.chat.android.server.presentation.CheckServerPresenter
 import com.goalify.chat.android.util.extensions.isValidUrl
 import com.goalify.chat.android.util.extensions.launchUI
-import chat.rocket.common.util.ifNull
 import javax.inject.Inject
 
 class ServerPresenter @Inject constructor(private val view: ServerView,
@@ -17,7 +18,18 @@ class ServerPresenter @Inject constructor(private val view: ServerView,
                                           private val navigator: AuthenticationNavigator,
                                           private val serverInteractor: SaveCurrentServerInteractor,
                                           private val refreshSettingsInteractor: RefreshSettingsInteractor,
-                                          private val getAccountsInteractor: GetAccountsInteractor) {
+                                          private val getAccountsInteractor: GetAccountsInteractor,
+                                          factory: RocketChatClientFactory
+) : CheckServerPresenter(strategy, factory, view) {
+
+    fun checkServer(server: String) {
+        if (!server.isValidUrl()) {
+            view.showInvalidServerUrlMessage()
+        } else {
+            view.showLoading()
+            checkServerInfo(server)
+        }
+    }
 
     fun connect(server: String) {
         connectToServer(server) {
@@ -25,7 +37,7 @@ class ServerPresenter @Inject constructor(private val view: ServerView,
         }
     }
 
-    fun connectToServer(server: String, block: () -> Unit) {
+    private fun connectToServer(server: String, block: () -> Unit) {
         if (!server.isValidUrl()) {
             view.showInvalidServerUrlMessage()
         } else {

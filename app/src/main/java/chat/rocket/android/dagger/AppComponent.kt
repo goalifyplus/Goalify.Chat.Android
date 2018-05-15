@@ -1,6 +1,7 @@
 package com.goalify.chat.android.dagger
 
 import android.app.Application
+import com.goalify.chat.android.app.AppLifecycleObserver
 import com.goalify.chat.android.app.RocketChatApplication
 import com.goalify.chat.android.chatroom.service.MessageService
 import com.goalify.chat.android.dagger.module.ActivityBuilder

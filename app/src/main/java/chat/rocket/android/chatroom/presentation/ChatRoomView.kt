@@ -26,9 +26,21 @@ interface ChatRoomView : LoadingView, MessageView {
     fun sendMessage(text: String)
 
     /**
+     * Shows the username(s) of the user(s) who is/are typing in the chat room.
+     *
+     * @param usernameList The list of username to show.
+     */
+    fun showTypingStatus(usernameList: ArrayList<String>)
+
+    /**
+     * Hides the typing status view.
+     */
+    fun hideTypingStatusView()
+
+    /**
      * Perform file selection with the mime type [filter]
      */
-    fun showFileSelection(filter: Array<String>)
+    fun showFileSelection(filter: Array<String>?)
 
     /**
      * Uploads a file to a chat room.
@@ -109,8 +121,10 @@ interface ChatRoomView : LoadingView, MessageView {
     fun populateRoomSuggestions(chatRooms: List<ChatRoomSuggestionViewModel>)
     /**
      * This user has joined the chat callback.
+     *
+     * @param canPost Whether the user can post a message or not.
      */
-    fun onJoined()
+    fun onJoined(canPost: Boolean)
 
     fun showReactionsPopup(messageId: String)
 
@@ -120,4 +134,6 @@ interface ChatRoomView : LoadingView, MessageView {
      * @param commands The list of available commands.
      */
     fun populateCommandSuggestions(commands: List<CommandSuggestionViewModel>)
+
+    fun onRoomChanged(canPost: Boolean)
 }

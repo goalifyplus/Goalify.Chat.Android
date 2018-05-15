@@ -3,14 +3,15 @@ package com.goalify.chat.android.dagger.module
 import com.goalify.chat.android.authentication.di.AuthenticationModule
 import com.goalify.chat.android.authentication.login.di.LoginFragmentProvider
 import com.goalify.chat.android.authentication.registerusername.di.RegisterUsernameFragmentProvider
+import com.goalify.chat.android.authentication.resetpassword.di.ResetPasswordFragmentProvider
 import com.goalify.chat.android.authentication.server.di.ServerFragmentProvider
 import com.goalify.chat.android.authentication.signup.di.SignupFragmentProvider
 import com.goalify.chat.android.authentication.twofactor.di.TwoFAFragmentProvider
 import com.goalify.chat.android.authentication.ui.AuthenticationActivity
 import com.goalify.chat.android.chatroom.di.ChatRoomFragmentProvider
+import com.goalify.chat.android.chatroom.di.ChatRoomModule
 import com.goalify.chat.android.chatroom.di.PinnedMessagesFragmentProvider
 import com.goalify.chat.android.chatroom.ui.ChatRoomActivity
-import com.goalify.chat.android.chatroom.ui.PinnedMessagesActivity
 import com.goalify.chat.android.chatrooms.di.ChatRoomsFragmentProvider
 import com.goalify.chat.android.dagger.scope.PerActivity
 import com.goalify.chat.android.main.di.MainModule
@@ -32,6 +33,7 @@ abstract class ActivityBuilder {
         ServerFragmentProvider::class,
         LoginFragmentProvider::class,
         RegisterUsernameFragmentProvider::class,
+        ResetPasswordFragmentProvider::class,
         SignupFragmentProvider::class,
         TwoFAFragmentProvider::class
     ])
@@ -45,12 +47,11 @@ abstract class ActivityBuilder {
     abstract fun bindMainActivity(): MainActivity
 
     @PerActivity
-    @ContributesAndroidInjector(modules = [ChatRoomFragmentProvider::class, MembersFragmentProvider::class])
+    @ContributesAndroidInjector(modules = [ChatRoomModule::class,
+        ChatRoomFragmentProvider::class,
+        MembersFragmentProvider::class,
+        PinnedMessagesFragmentProvider::class])
     abstract fun bindChatRoomActivity(): ChatRoomActivity
-
-    @PerActivity
-    @ContributesAndroidInjector(modules = [PinnedMessagesFragmentProvider::class])
-    abstract fun bindPinnedMessagesActivity(): PinnedMessagesActivity
 
     @PerActivity
     @ContributesAndroidInjector(modules = [PasswordFragmentProvider::class])

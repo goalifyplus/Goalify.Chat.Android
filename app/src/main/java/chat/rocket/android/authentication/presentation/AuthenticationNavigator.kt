@@ -5,6 +5,7 @@ import com.goalify.chat.android.R
 import com.goalify.chat.android.authentication.domain.model.LoginDeepLinkInfo
 import com.goalify.chat.android.authentication.login.ui.LoginFragment
 import com.goalify.chat.android.authentication.registerusername.ui.RegisterUsernameFragment
+import com.goalify.chat.android.authentication.resetpassword.ui.ResetPasswordFragment
 import com.goalify.chat.android.authentication.signup.ui.SignupFragment
 import com.goalify.chat.android.authentication.twofactor.ui.TwoFAFragment
 import com.goalify.chat.android.authentication.ui.AuthenticationActivity
@@ -12,6 +13,7 @@ import com.goalify.chat.android.authentication.ui.newServerIntent
 import com.goalify.chat.android.main.ui.MainActivity
 import com.goalify.chat.android.server.ui.changeServerIntent
 import com.goalify.chat.android.util.extensions.addFragmentBackStack
+import com.goalify.chat.android.util.extensions.toPreviousView
 import com.goalify.chat.android.webview.ui.webViewIntent
 
 class AuthenticationNavigator(internal val activity: AuthenticationActivity) {
@@ -28,6 +30,10 @@ class AuthenticationNavigator(internal val activity: AuthenticationActivity) {
         }
     }
 
+    fun toPreviousView() {
+        activity.toPreviousView()
+    }
+
     fun toTwoFA(username: String, password: String) {
         activity.addFragmentBackStack("TwoFAFragment", R.id.fragment_container) {
             TwoFAFragment.newInstance(username, password)
@@ -37,6 +43,12 @@ class AuthenticationNavigator(internal val activity: AuthenticationActivity) {
     fun toSignUp() {
         activity.addFragmentBackStack("SignupFragment", R.id.fragment_container) {
             SignupFragment.newInstance()
+        }
+    }
+
+    fun toForgotPassword() {
+        activity.addFragmentBackStack("ResetPasswordFragment", R.id.fragment_container) {
+            ResetPasswordFragment.newInstance()
         }
     }
 
