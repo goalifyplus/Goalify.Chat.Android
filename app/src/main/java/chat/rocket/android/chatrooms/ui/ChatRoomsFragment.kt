@@ -142,7 +142,7 @@ class ChatRoomsFragment : Fragment(), ChatRoomsView {
                 val dialogSort = AlertDialog.Builder(context)
                     .setTitle(R.string.dialog_sort_title)
                     .setView(dialogLayout)
-                    .setPositiveButton("Done", { dialog, _ -> dialog.dismiss() })
+                    .setPositiveButton(R.string.action_done, { dialog, _ -> dialog.dismiss() })
 
                 dialogSort.show()
             }

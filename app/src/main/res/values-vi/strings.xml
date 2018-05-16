@@ -5,6 +5,7 @@
     <string name="title_sign_in_your_server">Đăng nhập</string>
     <string name="title_log_in">Đăng nhập</string>
     <string name="title_register_username">Đăng ký tên đăng nhập</string>
+    <string name="title_reset_password">Đặt lại mật khẩu</string>
     <string name="title_sign_up">Đăng ký</string>
     <string name="title_authentication">Xác thực</string>
     <string name="title_legal_terms">" Điều khoản pháp lý"</string>
@@ -55,6 +56,10 @@
     <string name="msg_avatar_url">Ảnh đại diện URL</string>
     <string name="msg_or_continue_using_social_accounts">Hoặc tiếp tục sử dụng tài khoản mạng xã hội</string>
     <string name="msg_new_user">Người dùng mới? %1$s</string>
+    <string name="msg_forgot_password">Quên mật khẩu? %1$s</string>
+    <string name="msg_reset">Đặt lại</string>
+    <string name="msg_check_your_email_to_reset_your_password">Email đã gửi! Vui lòng kiểm tra hộp thư để đặt lại mật khẩu.</string>
+    <string name="msg_invalid_email">Vui lòng nhập e-mail hợp lệ</string>
     <string name="msg_new_user_agreement">Bằng cách tiếp tục, bạn đồng ý với\n%1$s và %2$s</string>
     <string name="msg_2fa_code">Mã bảo mật 2 lớp</string>
     <!-- <string name="msg_more_than_ninety_nine_unread_messages" translatable="false">99+</string> -->
@@ -83,15 +88,33 @@
     <string name="msg_preview_video">Video</string>
     <string name="msg_preview_audio">Âm thanh</string>
     <string name="msg_preview_photo">Hình ảnh</string>
+    <string name="msg_preview_file">Tệp</string>
     <string name="msg_no_messages_yet">Chưa nhận tin nhắn nào</string>
     <string name="msg_version">Phiên bản</string>
     <string name="msg_build">Xây dựng</string>
     <string name="msg_ok">OK</string>
+    <string name="msg_update_app_version_in_order_to_continue">Phiên bản máy chủ cần cập nhật. Vui lòng liên hệ với quản trị viên máy chủ để cập nhật.</string>
     <string name="msg_ver_not_recommended">
         Có vẻ phiên bản server của bạn thấp hơn phiên bản được đề xuất %1$s.\nBạn vẫn có thể đăng nhập tuy nhiên sẽ gặp phải một số vấn để không lường trước được.</string>
     <string name="msg_ver_not_minimum">
         Có vẻ như phiên bản máy chủ của bạn thấp hơn phiên bản yêu cầu tối thiểu %1$s.\nVui lòng cập nhật để có thể đăng nhập!
     </string>
+    <string name="msg_no_chat_title">Chưa có tin nhắn trò chuyện</string>
+    <string name="msg_no_chat_description">Hãy bắt đầu trò chuyện\nđể xem tin nhắn của bạn ở đây.</string>
+    <string name="msg_proceed">TIẾP TỤC</string>
+    <string name="msg_cancel">HUỶ BỎ</string>
+    <string name="msg_warning">CẢNH BÁO</string>
+    <string name="msg_http_insecure">Khi sử dụng HTTP, bạn đang kết nối với một máy chủ không an toàn. Chúng tôi không khuyến khích bạn làm điều đó.</string>
+    <string name="msg_error_checking_server_version">Đã xảy ra lỗi khi kiểm tra phiên bản máy chủ của bạn, vui lòng thử lại</string>
+    <string name="msg_invalid_server_protocol">Giao thức đã chọn không được máy chủ này chấp nhận, hãy thử sử dụng HTTPS</string>
+    <string name="msg_image_saved_successfully">Hình ảnh đã được lưu vào thư viện</string>
+    <string name="msg_image_saved_failed">Không thể lưu hình ảnh</string>
+    <string name="msg_edited">(đã chỉnh sửa)</string>
+    <string name="msg_and">\u0020và\u0020</string>
+    <string name="msg_is_typing">\u0020đang đánh máy…</string>
+    <string name="msg_are_typing">\u0020đang đánh máy…</string>
+    <string name="msg_several_users_are_typing">Một số người dùng đang đánh máy…</string>
+    <string name="msg_no_search_found">Không có kết quả nào</string>
 
     <!-- System messages -->
     <string name="message_room_name_changed">Tên kênh được đổi thành: %1$s by %2$s</string>
@@ -102,6 +125,10 @@
     <string name="message_welcome">Chào mừng %s</string>
     <string name="message_removed">Tin nhắn bị xoá</string>
     <string name="message_pinned">Ghim tin nhắn:</string>
+    <string name="message_muted">Người dùng %1$s bị tắt tiếng bởi  %2$s</string>
+    <string name="message_unmuted">Người dùng %1$s được bật tiếng bởi %2$s</string>
+    <string name="message_role_add">%1$s được thiết lập %2$s bởi %3$s</string>
+    <string name="message_role_removed">%1$s không còn là %2$s bởi %3$s</string>
 
     <!-- Message actions -->
     <string name="action_msg_reply">Đáp lại</string>
@@ -111,7 +138,8 @@
     <string name="action_msg_delete">Xoá</string>
     <string name="action_msg_pin">Ghim tin nhắn</string>
     <string name="action_msg_unpin">Bỏ ghim tin nhắn</string>
-    <string name="action_msg_star">Star message</string>
+    <string name="action_msg_star">Đánh dấu sao tin nhắn</string>
+    <string name="action_msg_unstar">Bỏ dấu sao tin nhắn</string>
     <string name="action_msg_share">Chia sẻ</string>
     <string name="action_title_editing">Chỉnh sửa tin nhắn</string>
     <string name="action_msg_add_reaction">Thêm biểu cảm</string>
@@ -120,6 +148,7 @@
     <string name="permission_editing_not_allowed">Không có quyền chỉnh sửa</string>
     <string name="permission_deleting_not_allowed">Không có quyền xoá</string>
     <string name="permission_pinning_not_allowed">Không có quyền ghim</string>
+    <string name="permission_starring_not_allowed">Không được phép gắn dấu sao</string>
 
     <!-- Members List -->
     <string name="title_members_list">Danh sách thành viên</string>

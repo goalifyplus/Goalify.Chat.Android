@@ -142,7 +142,7 @@ class ImageAttachmentViewHolder(itemView: View,
             val resource = ImagePipelineFactory.getInstance().mainFileCache.getResource(cacheKey)
             val cachedFile = (resource as FileBinaryResource).file
             val imageFormat = ImageFormatChecker.getImageFormat(resource.openStream())
-            val imageDir = "${Environment.DIRECTORY_PICTURES}/Rocket.Chat Images/"
+            val imageDir = "${Environment.DIRECTORY_PICTURES}/Goalify.Chat Images/"
             val imagePath = Environment.getExternalStoragePublicDirectory(imageDir)
             val imageFile = File(imagePath, "${cachedFile.nameWithoutExtension}.${imageFormat.fileExtension}")
             imagePath.mkdirs()
