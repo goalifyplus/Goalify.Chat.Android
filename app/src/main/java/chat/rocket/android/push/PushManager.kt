@@ -7,6 +7,7 @@ import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
+import android.graphics.Bitmap
 import android.media.RingtoneManager
 import android.media.AudioAttributes
 import android.os.Build
@@ -20,14 +21,17 @@ import android.support.v4.app.RemoteInput
 import android.text.Html
 import android.text.Spanned
 import android.net.Uri
+import android.graphics.BitmapFactory
 import com.goalify.chat.android.R
 import com.goalify.chat.android.main.ui.MainActivity
 import com.goalify.chat.android.server.domain.GetAccountInteractor
 import com.goalify.chat.android.server.domain.GetSettingsInteractor
 import com.goalify.chat.android.server.domain.siteName
 import com.goalify.chat.android.server.ui.changeServerIntent
+import com.goalify.chat.android.util.extensions.avatarUrl
 import chat.rocket.common.model.RoomType
 import chat.rocket.common.model.roomTypeOf
+import com.goalify.chat.android.server.domain.baseUrl
 import com.squareup.moshi.Json
 import com.squareup.moshi.Moshi
 import kotlinx.coroutines.experimental.runBlocking
@@ -37,6 +41,8 @@ import timber.log.Timber
 import java.util.*
 import java.util.concurrent.atomic.AtomicInteger
 import javax.inject.Inject
+import java.net.HttpURLConnection
+import java.net.URL
 
 /**
  * Refer to: https://github.com/RocketChat/Rocket.Chat.Android/blob/9e846b7fde8fe0c74b9e0117c37ce49293308db5/app/src/main/java/chat/rocket/android/push/PushManager.kt
@@ -64,14 +70,14 @@ class PushManager @Inject constructor(
         val notId = data["notId"] as String? ?: randomizer.nextInt().toString()
         val image = data["image"] as String?
         val style = data["style"] as String?
-        val summaryText = data["summaryText"] as String?
+        val summaryText = data["summaryText"] as String??
         val count = data["count"] as String?
 
         try {
             val adapter = moshi.adapter<PushInfo>(PushInfo::class.java)
             val info = adapter.fromJson(ejson)
 
-            val pushMessage = PushMessage(title!!, message!!, info!!, image, count, notId, summaryText, style)
+            val pushMessage = PushMessage(title!!, message!!, info!!, image, count, notId, summaryText, style)            
 
             Timber.d("Received push message: $pushMessage")
 
@@ -235,7 +241,7 @@ class PushManager @Inject constructor(
                     .setGroup(host)
                     .setDeleteIntent(deleteIntent)
                     .setContentIntent(contentIntent)
-                    .setMessageNotification()
+                    .setMessageNotification(info)
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 val audioAttr = AudioAttributes.Builder()
@@ -340,15 +346,29 @@ class PushManager @Inject constructor(
         }
     }
 
-    private fun NotificationCompat.Builder.setMessageNotification(): NotificationCompat.Builder {
+    private fun getLargeIconNotification(info: PushInfo): Bitmap {
+        val settings = getSettingsInteractor.get(info.host)
+        val baseUrl = settings.baseUrl()
+        val avatarUrl = if (roomTypeOf(info.type.toString()) == RoomType.DIRECT_MESSAGE) {
+            val username = info.sender?.let { info.sender.username }
+            baseUrl?.let { baseUrl.avatarUrl(username.toString()) }
+        } else {
+            baseUrl?.let { baseUrl.avatarUrl(info.name.toString(), true) }
+        }
+        val avatarUrlConnection = URL(avatarUrl).openConnection() as HttpURLConnection
+        return BitmapFactory.decodeStream(avatarUrlConnection.getInputStream())
+    }
+
+    private fun NotificationCompat.Builder.setMessageNotification(info: PushInfo): NotificationCompat.Builder {
         val res = context.resources
+        val largeIcon = getLargeIconNotification(info)
         val smallIcon = res.getIdentifier(
             "ic_stat_name", "drawable", context.packageName)       
         with(this, {
             setAutoCancel(true)
             setShowWhen(true)
             color = context.resources.getColor(R.color.notification_color)
-            // setDefaults(Notification.DEFAULT_ALL)
+            setLargeIcon(largeIcon)
             setSmallIcon(smallIcon)
             setSound(Uri.parse("android.resource://" + context.packageName + "/" + R.raw.notification))
         })
